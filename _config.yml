@@ -23,6 +23,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
 
-# 댓글기능
-
-disqus_shortname: 'syki66'
