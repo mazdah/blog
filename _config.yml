@@ -7,7 +7,7 @@ url:                "https://syki66.github.io"
 
 # Social Profiles
 #twitter_username:   SBootstrap
-github_username:    SyKi
+github_username:    SyKi66
 #facebook_username:  StartBootstrap
 linkedin_username:
 
@@ -22,3 +22,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+# 댓글기능
+disqus_url: https://syki66.disqus.com/
+disqus_id: SyKi66
