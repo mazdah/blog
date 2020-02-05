@@ -32,8 +32,8 @@ comments: true
 
       </div>
     </div>
+    {%- if site.disqus.shortname -%}
+    {%- include disqus.html -%}
+    {%- endif -%}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus.html -%}
-  {%- endif -%}
