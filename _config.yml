@@ -24,5 +24,3 @@ plugins:
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
 
 disqus_shortname: syki66
-
-highlighter: rouge
