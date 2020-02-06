@@ -36,6 +36,8 @@ background: '/img/posts/02.jpg'
 > cd C:\Users\syki\Desktop\test
 ```
 
+  
+
 
 ## 5. 서버 실행
 ```
