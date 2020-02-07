@@ -29,14 +29,14 @@ background: '/img/posts/02.jpg'
 ```
 > gem install bundler  
 ```
+jekyll과 bundler 패키지를 설치해줍니다.
 
 
 ## 4. 폴더로 이동
 ```
 > cd C:\Users\syki\Desktop\test
 ```
-
-  
+작업중인 디렉토리로 이동합니다.
 
 
 ## 5. 서버 실행
