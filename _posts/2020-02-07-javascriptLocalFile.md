@@ -82,7 +82,7 @@ fr.onload = () => {
 ```
 `readAsText()`를 이용하여 텍스트파일로 읽을수 있게 하고, `utf-8`을 인자로 줌으로써 한글이 깨지지 않도록 합니다.
 
-그 후 `fr.onload()` 함수로 파일불러오는 것이 완료되면 `parseText()` 함수에 `fr.result` (파일의 내용) 를 넘겨주게 됩니다.
+그 후 `fr.onload()` (파일불러오는 것이 완료되면 안에있는 내용 실행하는 함수), `parseText()` 함수에 `fr.result` (파일의 내용) 를 넘겨주게 됩니다.
 
 ***
 
@@ -94,5 +94,5 @@ function parseText(text) {
 이제 이 함수 안에서 자유롭게 파일을 가공할 수 있습니다.
 
 ***
-# 참고 링크
+## 참고 링크
 [mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)
