@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "[HTML, javascript] 바닐라 자바스크립트를 이용하여 파일 불러오기"
-subtitle: "^__^"
 date: 2020-02-07 14:30:00 +0900
 background: '/img/posts/02.jpg'
 ---
@@ -96,4 +95,4 @@ function parseText(text) {
 
 ***
 # 참고 링크
-## [mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)
+[mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)

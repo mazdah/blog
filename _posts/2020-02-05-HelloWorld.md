@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Hello World!!"
-subtitle: "^_^"
-date: 2020-02-06 16:30:00 +0900
+subtitle: "^__^"
+date: 2020-02-05 16:30:00 +0900
 background: '/img/posts/06.jpg'
 ---
 
