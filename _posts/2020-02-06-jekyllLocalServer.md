@@ -14,12 +14,12 @@ background: '/img/posts/01.jpg'
 
 ---
 ## 1. 루비 다운로드
-![루비 다운로드](https://i.imgur.com/kLn21Pa.png)
+![루비 다운로드](https://user-images.githubusercontent.com/59393359/74086021-5649a800-4ac2-11ea-916a-0fa9b518936b.PNG)
 자신의 운영체제에 맞는 DEVKIT이 포함된 인스톨러를 다운받고 기본값들로 설치한다.  
 
 
 ## 2. 윈도우 검색창에서 Start Command with Ruby 클릭
-![cmd 실행](https://i.imgur.com/TJcH3Kp.png)
+![cmd 실행](https://user-images.githubusercontent.com/59393359/74086033-695c7800-4ac2-11ea-8ab1-94c303a84d8f.PNG)
 
 
 ## 3. 명령창 입력

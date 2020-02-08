@@ -7,7 +7,7 @@ background: '/img/posts/02.jpg'
 
 일반적으로 html과 자바스크립트에서 로컬에 있는 파일을 불러와서 작업을 하고 싶을때 `cors`라는 정책 때문에 직접 불러올 수가 없습니다.
 
-![cors error](https://i.imgur.com/Mxi1XfO.png)
+![cors error](https://user-images.githubusercontent.com/59393359/74086007-3c0fca00-4ac2-11ea-8c28-6b7d7a390dbe.PNG)
 
 만약 로컬파일을 코드 상에서 작업하고 싶다면 node.js 등을 활용해서 로컬 서버를 구성한 후 불러와야 됩니다.
 

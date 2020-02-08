@@ -10,7 +10,7 @@ background: '/img/posts/01.jpg'
 
 하지만 사이트를 동작시켜보니 코드블럭을 쓰더라도 자동으로 하이라이팅이 되지 않아서 구글링으로 찾아보면서 해결한 결과를 올려봅니다.
 
-<img src="https://i.imgur.com/uTQxyHj.png" style="border-style: dashed; border-color: black;">
+<img src="https://user-images.githubusercontent.com/59393359/74085994-25697300-4ac2-11ea-832e-44d74969b154.PNG" style="border-style: dashed; border-color: black;">
 
 적용전
 
@@ -55,14 +55,14 @@ highlighter: rouge
 ```
 이후 사이트에 들어가보면 코드블럭이 적용되있는 것을 확인할 수 있다.
 
-<img src="https://i.imgur.com/XWvWEMy.png" style="border-style: dashed; border-color: black;">
+<img src="https://user-images.githubusercontent.com/59393359/74085888-13d39b80-4ac1-11ea-8ac1-c662c9edb3f7.PNG" style="border-style: dashed; border-color: black;">
 
 ***
 
 ***
 
 ### 추가로 아래의 사진과 같이 코드블럭의 스크롤을 없애고 싶다면(자동줄바꿈 기능 추가)
-<img src="https://i.imgur.com/KnUuPMY.png" style="border-style: dashed; border-color: gray;">
+<img src="https://user-images.githubusercontent.com/59393359/74085871-ec7cce80-4ac0-11ea-8d0f-7fc9ea363121.PNG" style="border-style: dashed; border-color: gray;">
 
 `_bootstrap-overrides.scss`에 추가로 밑의 코드를 넣어주면 된다.
 
@@ -76,7 +76,7 @@ pre.highlight {
 
 ## 적용후
 
-<img src="https://i.imgur.com/K23N8Lc.png" style="border-style: dashed; border-color: gray;">
+<img src="https://user-images.githubusercontent.com/59393359/74085840-a293e880-4ac0-11ea-9864-efe7601dfdc3.PNG" style="border-style: dashed; border-color: gray;">
 
 ***
 
@@ -85,8 +85,3 @@ pre.highlight {
 [https://moon9342.github.io/jekyll-rouge](https://moon9342.github.io/jekyll-rouge)
 
 [https://renakim.github.io/2019/04/03/modify-highlighter/](https://renakim.github.io/2019/04/03/modify-highlighter/)
-
-
-
-
-![](./1.png)
