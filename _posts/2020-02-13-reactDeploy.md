@@ -6,7 +6,7 @@ background: '/img/posts/01.jpg'
 ---
 
 우선 깃허브 무료 private에서는 호스팅이 불가능하기 때문데 깃허브 레포지토리를 public으로 바꾸어야 됩니다. (유료요금제면 private 호스팅 가능)
-
+***
 # 1. package.json 수정
 
 먼저 React JS로 작업한 레포지토리에 들어간 후 `package.json` 파일로 들어가서 하단부에 `homepage` 항목을 추가해줍니다.
@@ -20,7 +20,7 @@ background: '/img/posts/01.jpg'
 ```json
 "homepage": "https://syki66.github.io/tEsT/"
 ```
-
+***
 # 2. gh-pages 설치
 
 깃허브의 무료 호스팅을 이용하기 위해 아래 모듈을 설치한다.
@@ -28,7 +28,7 @@ background: '/img/posts/01.jpg'
 ```
 > npm install gh-pages
 ```
-
+***
 # 3. "scripts" 수정
 
 scripts 안에 deploy와 predeploy를 추가시켜 줍니다.
@@ -49,7 +49,7 @@ scripts 안에 deploy와 predeploy를 추가시켜 줍니다.
     "predeploy": "npm run build"
   }
 ```
-
+***
 # 4. deploy
 
 ```

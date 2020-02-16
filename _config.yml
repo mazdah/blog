@@ -26,3 +26,6 @@ plugins:
 disqus_shortname: syki66
 
 highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
