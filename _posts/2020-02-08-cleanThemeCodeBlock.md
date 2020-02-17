@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "지킬(jekyll)의 clean blog 테마에서 코드블럭 설정하기"
+title: "지킬(jekyll)의 clean blog 테마에서 코드블럭, 하이라이터 설정하기"
 subtitle: "+지킬(jekyll) 코드블럭 자동 줄바꿈 설정하기"
 date: 2020-02-08 18:30:00 +0900
 background: '/img/posts/01.jpg'
