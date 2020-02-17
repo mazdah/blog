@@ -2,7 +2,7 @@
 layout: post
 title: "깃허브 지킬 블로그 디스커스 추가 "
 subtitle: ""
-date: 2020-02-17 01:30:00 +0900
+date: 2020-02-17 13:30:00 +0900
 background: '/img/posts/04.jpg'
 
 ---

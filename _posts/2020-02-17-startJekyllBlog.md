@@ -2,9 +2,8 @@
 layout: post
 title: "깃허브 블로그 지킬을 이용하여 시작하기"
 subtitle: ""
-date: 2020-02-17 01:30:00 +0900
+date: 2020-02-17 15:30:00 +0900
 background: '/img/posts/03.jpg'
-
 ---
 
 먼저 원하는 테마 선택
