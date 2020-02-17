@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "깃허브 issue 를 사용해서 "
-subtitle: ""
+title: "깃허브 issue 를 사용해서 깃허브 서버에 사진 업로드하기"
+subtitle: "사진 로컬에서 그만 가져오기"
 date: 2020-02-17 01:30:00 +0900
 background: '/img/posts/01.jpg'
 
