@@ -27,8 +27,8 @@ jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markd
 나는 [jasper](https://jekyller.github.io/jasper/)와 [clean blog](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/) 중에서 고민하다가 조금 더 깔끔한 clean blog 테마를 선택하게 되었다.
 
 - #### 지킬테마 검색 사이트
-    - http://jekyllthemes.org/
-    - https://jekyllthemes.io/
+    - (http://jekyllthemes.org/)
+    - (https://jekyllthemes.io/)
 
 <br />
 
@@ -73,18 +73,18 @@ url:                "https://syki66.github.io"
 
 # 5. 블로그 포스팅
 
-포스트 생성은 `_posts` 폴더에서 `markdown` 파일을 만들어서 블로그를 작성하면 되며, markdown 파일 상단에 아래코드를 추가, 알맞게 수정하고서 포스트를 작성하면됨
+포스트 생성은 `_posts` 폴더에서 `markdown` 파일을 만들어서 블로그를 작성하면 되며, markdown 파일 상단에 아래코드를 추가하고 알맞게 수정한 뒤, 밑에 `markdown` 문법을 이용하여 포스트를 작성하면됨 - ([markdown 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601))
 
 ```yml
 ---
 layout: post
 title: "제목"
 subtitle: "부제목"
-date: 2020-02-05 16:30:00 +0900
-background: '/img/posts/01.jpg'
+date: 2020-02-05 16:30:00 +0900 # +0900은 서울 표준시
+background: '/img/posts/01.jpg' # 포스트 배경사진
 ---
 ```
 
-포스트 작성을 완료한 후 깃허브에 업로드 하면 얼마뒤에 퍼블리시된 url 주소로 들어가면 정상정으로 포스트가 추가된 것을 볼수있음
+포스트 작성을 완료한 후 깃허브에 업로드 하고, 얼마뒤에 퍼블리시된 url 주소로 들어가면 정상정으로 포스트가 추가된 것을 볼수있음
 
 <br />
