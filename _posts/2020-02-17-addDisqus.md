@@ -24,12 +24,6 @@ post.html로 들어가서 아래부분에 댓글 추가 하기 위해
 
 
 
-  _config.yml 에 들어가서
-```yml
-  disqus_shortname: syki66
-```
-
-
 
 
 지킬 가입후 

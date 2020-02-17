@@ -1,19 +1,43 @@
 ---
 layout: post
-title: "깃허브 블로그 지킬을 이용하여 시작하기"
-subtitle: ""
+title: "무료 깃허브 블로그, 지킬을 이용하여 시작하기"
+subtitle: "github pages, blog with jekyll"
 date: 2020-02-17 15:30:00 +0900
 background: '/img/posts/03.jpg'
 ---
 
-먼저 원하는 테마 선택
+jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markdown` 을 지원하여 편하게 블로그 포스팅을 할 수 있게 해준다.
 
-나는 jasper와 clean blog theme 중에서 고민하다가 결국 clean blog 테마를 선택하게 되었다.
+또한 깃허브의 호스팅 기능(github pages)을 이용하여 무료로 사용 가능하다.
 
-http://jekyllthemes.org/
-https://jekyllthemes.io/
+#
+#
+#
+#
+#
+#
+#
+---
 
-다운로드 후 압축풀고 `_config.yml` 파일 수정
+# 1. 깃허브 레포지토리 생성
+
+생성후 `git` 이용하여 연결
+
+---
+
+# 2. 원하는 테마 선택
+
+나는 [jasper](https://jekyller.github.io/jasper/)와 [clean blog](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/) 중에서 고민하다가 조금 더 깔끔한 clean blog 테마를 선택하게 되었다.
+
+- ### 지킬테마 검색 사이트
+    - http://jekyllthemes.org/
+    - https://jekyllthemes.io/
+
+---
+
+# 2. 파일 수정
+
+원하는 테마 zip파일 다운로드 & 압축풀고 `_config.yml` 파일 수정
 
 ```yml
 title:              혼공
@@ -24,11 +48,11 @@ baseurl:            "/SyKi_blog"
 url:                "https://syki66.github.io"
 ```
 
-### 여기서 baseurl과 url은 반드시 수정해주어야함.
+- ## 여기서 `baseurl`과 `url`은 반드시 수정해주어야함.
 
-url은 `"https://깃허브유저네임.github.io"`
+`url` -> `"https://깃허브유저네임.github.io"`
 
-baseurl은 `"/디렉토리명"`
+`baseurl` -> `"/디렉토리명"`
 
 이렇게 입력해주면된다. (여기서 유저네임은 소문자로 적어야됨)
 

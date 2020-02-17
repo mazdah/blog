@@ -22,4 +22,4 @@ background: '/img/posts/01.jpg'
 ![image](https://user-images.githubusercontent.com/59393359/74649696-6dc01980-51c3-11ea-979c-24a267cb8773.png)
 
 
-마크다운으로 복사해서 쓰면되고 댓글 취소해도 계속 유효함. 대신 url 잃어버리면 못씀
+마크다운으로 복사해서 쓰면되고 댓글 취소해도 url은 계속 유효함. 대신 url 잃어버리면 못씀
