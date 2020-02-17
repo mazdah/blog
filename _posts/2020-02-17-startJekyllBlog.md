@@ -27,8 +27,8 @@ jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markd
 나는 [jasper](https://jekyller.github.io/jasper/)와 [clean blog](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/) 중에서 고민하다가 조금 더 깔끔한 clean blog 테마를 선택하게 되었다.
 
 - #### 지킬테마 검색 사이트
-    - (http://jekyllthemes.org/)
-    - (https://jekyllthemes.io/)
+    - [jekyllthemes.org](http://jekyllthemes.org/)
+    - [jekyllthemes.io](https://jekyllthemes.io/)
 
 <br />
 
