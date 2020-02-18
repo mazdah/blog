@@ -67,6 +67,11 @@ plugins:
 ---
 
 네이버
-다음
 
-![image](https://user-images.githubusercontent.com/59393359/74749679-de436500-52ad-11ea-9b37-ed61b6e8506c.png)
+
+![image](https://user-images.githubusercontent.com/59393359/74749891-32e6e000-52ae-11ea-98db-fde20cab07b0.png)
+
+
+![image](https://user-images.githubusercontent.com/59393359/74751520-b4d80880-52b0-11ea-920a-59e8e419cd2d.png)
+
+다음
