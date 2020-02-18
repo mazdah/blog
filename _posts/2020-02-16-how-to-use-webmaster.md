@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "깃허브 지킬 블로그를 구글, 네이버, 다음에서 검색되도록 설정하기"
-subtitle: "웹마스터 (webmaster)"
+title: "깃허브 지킬 블로그를 구글에서 검색되도록 설정하기"
+subtitle: "웹마스터 (webmaster), github jekyll blog"
 date: 2020-02-16 14:30:00 +0900
 background: '/img/posts/01.jpg'
 ---
@@ -58,20 +58,8 @@ plugins:
 
 ---
 
-그러면 아래의 사진처럼 성공했다고 표시가 되며, 몇시간 안에 구글 검색으로 블로그가 노출되게됨
+그러면 아래의 사진처럼 성공했다고 표시가 되며, 몇시간 안에 구글 검색으로 블로그가 노출되게 된다.
 
 ![image](https://user-images.githubusercontent.com/59393359/74607783-14061380-511f-11ea-8b04-da84a428b232.png)
 
 <br/>
-
----
-
-네이버
-
-
-![image](https://user-images.githubusercontent.com/59393359/74749891-32e6e000-52ae-11ea-98db-fde20cab07b0.png)
-
-
-![image](https://user-images.githubusercontent.com/59393359/74751520-b4d80880-52b0-11ea-920a-59e8e419cd2d.png)
-
-다음
