@@ -1,21 +1,26 @@
 ---
 layout: post
-title: "[HTML, javascript] 바닐라 자바스크립트를 이용하여 파일 불러오기"
-subtitle: ""
+title: "바닐라 자바스크립트를 이용하여 로컬 파일 불러오기"
+subtitle: "with html, javascript"
 date: 2020-02-07 14:30:00 +0900
-background: '/img/posts/02.jpg'
+background: '/img/posts/04.jpg'
 ---
 
-일반적으로 html과 자바스크립트에서 로컬에 있는 파일을 불러와서 작업을 하고 싶을때 `cors`라는 정책 때문에 직접 불러올 수가 없습니다.
+일반적으로 `html`과 `javascript`에서 로컬에 있는 파일을 불러와서 작업을 하고 싶을때 `cors`라는 정책 때문에 직접 불러올 수가 없어서
+
+만약 로컬파일을 코드 상에서 직접 작업하고 싶다면 node.js 등을 활용해서 로컬 서버를 구성한 후 불러와야 된다.
 
 ![cors error](https://user-images.githubusercontent.com/59393359/74086007-3c0fca00-4ac2-11ea-8c28-6b7d7a390dbe.PNG)
 
-만약 로컬파일을 코드 상에서 작업하고 싶다면 node.js 등을 활용해서 로컬 서버를 구성한 후 불러와야 됩니다.
+---
 
-하지만 사용자가 파일을 직접 불러오게끔 한다면 자바스크립트에서도 로컬파일을 불러와서 작업을 할수 있습니다.
+하지만 사용자가 파일을 직접 불러오게끔 구성한다면 자바스크립트에서도 로컬파일을 불러와서 작업을 할 수 있다.
 
-먼저 html코드로 사용자가 파일을 불러와서 summit 할 수 있도록 구성해보았습니다.
+먼저 html코드로 사용자가 파일을 불러와서 `summit` 할 수 있도록 구성해보았다.
 
+<br/>
+
+---
 
 # 1. html 코드
 
@@ -30,12 +35,19 @@ background: '/img/posts/02.jpg'
     </div>
 </form>
 ```
-label의 `for`에 input의 `id`를 넣어주어 같이 클릭 될 수 있게 했습니다.
 
-파일을 불러오고나서 `summit` 버튼을 클릭하게되면 아래에 있는 `test()` 함수가 실행되게 됩니다.
+label의 `for`에 input의 `id`를 넣어주어 같이 클릭 될 수 있게 했고,
 
+파일을 불러오고나서 `summit` 버튼을 클릭하게되면 아래에 있는 `test()` 함수가 실행되게 된다.
+
+<br/>
+
+---
 
 # 2. 자바스크립트 코드
+
+아래의 자바스크립트 코드는 사용자가 불러온 txt파일을 콘솔창에 출력해주는 예제이다.
+
 ```html
 <script>
     function test(event) {
@@ -57,21 +69,25 @@ label의 `for`에 input의 `id`를 넣어주어 같이 클릭 될 수 있게 했
     }
 </script>
 ```
-위의 자바스크립트 코드는 불러온 txt파일을 콘솔창에 출력해주는 예제입니다.
 
 ***
 
-먼저 첫번째 `event.preventDefault();` 코드는 summit을 할때 새로고침이 되는것을 방지해주는 메소드 입니다.
+먼저 첫번째 `event.preventDefault();` 코드는 summit을 할때 새로고침이 되는것을 방지해주는 메소드이다.
 
 ***
+
+아래 코드는 불러온 파일의 이름을 알아낸다.
 
 ```javascript
 let fileObject = document.getElementById("file");
 let fileName = fileObject.files[0];
 ```
-위 코드는 불러온 파일의 이름을 알아냅니다.
 
 ***
+
+`readAsText()`를 이용하여 텍스트파일로 읽을수 있게 하고, `utf-8`을 인자로 줌으로써 한글이 깨지지 않도록 한다.
+
+`fr.onload()` (파일불러오는 것이 완료되면 안에있는 내용을 실행하는 함수)가 `parseText()` 함수에게 `fr.result` (파일의 내용) 를 넘겨주게 된다.
 
 ```javascript
 let fr = new FileReader();
@@ -81,19 +97,21 @@ fr.onload = () => {
     parseText(fr.result);
 }
 ```
-`readAsText()`를 이용하여 텍스트파일로 읽을수 있게 하고, `utf-8`을 인자로 줌으로써 한글이 깨지지 않도록 합니다.
-
-그 후 `fr.onload()` (파일불러오는 것이 완료되면 안에있는 내용 실행하는 함수), `parseText()` 함수에 `fr.result` (파일의 내용) 를 넘겨주게 됩니다.
 
 ***
+
+이제 `parseText` 함수 안에서 자유롭게 파일을 가공하면 된다.
 
 ```javascript
 function parseText(text) {
     console.log(text)
 }
 ```
-이제 이 함수 안에서 자유롭게 파일을 가공할 수 있습니다.
+
+<br/>
 
 ***
+
 ## 참고 링크
+
 [mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)

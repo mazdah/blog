@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "github의 issue를 사용해서 깃허브 서버에 사진 업로드하기"
-subtitle: "지킬 블로그 로컬이 아닌 서버에서 사진 가져오기"
+title: "github의 issue를 사용해서 깃허브 서버에 사진 업로드"
+subtitle: "지킬(jekyll) 블로그, 로컬 말고 서버에서 사진 가져오기"
 date: 2020-02-17 01:30:00 +0900
-background: '/img/posts/01.jpg'
-
 ---
 
 마크다운 파일을 작성하다 보면 사진들을 업로드 해야하는 경우가 종종 있는데, 이 사진들을 로컬에서 직접 관리하기가 복잡해져서 [imgur](https://imgur.com/)을 쓰다가 좀더 안정적으로 쓰고 싶어 `github`의 `issues`를 이용해 사진 올리는 법을 적어본다.
@@ -36,6 +34,8 @@ background: '/img/posts/01.jpg'
 
 ![image](https://user-images.githubusercontent.com/59393359/74649658-54b76880-51c3-11ea-93c4-f0c737d117a3.png)
 
+---
+
 아래 이미지와 같이 뜨게된다.
 
 ![image](https://user-images.githubusercontent.com/59393359/74649696-6dc01980-51c3-11ea-979c-24a267cb8773.png)
@@ -46,7 +46,7 @@ background: '/img/posts/01.jpg'
 
 # 4. 복사해서 `markdown` 에 적용
 
-그대로 복사해서 `markdown`에 적용하거나, url만 가져와서 `html`의 `img` 태그에 사용해도 되며, issue를 취소 해도 이미 만들어진 사진의 주소는 계속 유효하다.
+그대로 복사해서 `markdown`에 적용하거나, url만 가져와서 `html`의 `img` 태그에 사용해도 되며, github에서 issue를 취소 해도 이미 만들어진 사진의 주소는 계속 유효하다.
 
 - #### 주의사항 : 한번 링크를 잃어버리면 다시는 사진을 찾을수 없음
 

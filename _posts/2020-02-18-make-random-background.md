@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "깃허브 지킬(github, jekyll) 블로그 포스트 배경화면 랜덤하게 변경하기"
-subtitle: "깃허브 지킬 블로그 커스터마이징"
+title: "깃허브 지킬 블로그 포스트 배경화면 랜덤하게 변경하기"
+subtitle: "깃허브 지킬(github, jekyll) 블로그 커스터마이징"
 date: 2020-02-18 16:30:00 +0900
 ---
 
-지킬을 이용하여 블로그 포스트 작성할때, 매번 배경화면을 뭘로 설정할까 고민하기가 싫어져서 배경화면이 랜덤으로 뜰수 있게 블로그를 커스터마이징 해보았다.
+지킬을 이용하여 블로그 포스트 작성할때, 매번 배경화면을 뭘로 설정할까 고민하기가 귀찮아져서 포스트의 배경화면이 랜덤으로 뜰수 있게 블로그를 커스터마이징 해보았다.
 
 <br/>
 
@@ -19,17 +19,17 @@ js파일을 따로 관리하기 위해서 `<script>`와 경로 추가
 
 자바스크립트로 태그의 style을 바꾸기기 위해서 header 태그의 class에 `random_BG` 추가
 
-<div style="background-color:#272822; padding:5px; color:#f1ffff; font-size:15px;">
+<div style="background-color:#272822; padding:5px; color:#f1ffff; font-size:18px;">
 &#123;&#37; if page.background &#37;&#125;<br/>
 &#60;header class="masthead" style="background-image: url('&#123;&#123; page.background | prepend: site.baseurl | replace: '//', '/' &#125;&#125;')"&#62;<br/>
 &#160;&#160;  &#123;&#37; else &#37;&#125;<br/>
-&#160;&#160;  &#60;header class="masthead random_BG"&#62;<br/>
-&#160;&#160;  &#60;script src="&#123;&#123;'/assets/customJS/randomBgImg.js' | relative_url &#125;&#125;"&#62;&#60;/script&#62;
+&#160;&#160;  &#60;header class="masthead <span style="color:red">random_BG</span>"&#62;<br/>
+<span style="color:red">&#160;&#160;  &#60;script src="&#123;&#123;'/assets/customJS/randomBgImg.js' | relative_url &#125;&#125;"&#62;&#60;/script&#62;</span>
 </div>
 
-else문에 스크립트를 넣음으로써, 포스트 상단 헤더 `yml`에 `background` 항목이 없다면 스크립트를 실행하도록 했다.
+else문에 스크립트를 넣음으로써, 개별 포스트 상단 헤더(`yml`)에 `background` 항목이 없다면 스크립트를 실행하도록 했다.
 
-#### 즉, 최종적으로 개별 포스트에서 따로 배경화면을 설정하지 않는다면, 랜덤한 배경화면이 자동으로 들어가게 된다.
+#### 즉, 최종적으로 개별 포스트에서 따로 배경화면을 설정하지 않는다면, 랜덤한 배경화면이 자동으로 적용된다.
 
 <br/>
 
@@ -42,6 +42,8 @@ else문에 스크립트를 넣음으로써, 포스트 상단 헤더 `yml`에 `ba
 ```js
 const bg = document.querySelector(".random_BG");
 ```
+
+---
 
 그리고 가져온 요소의 style 변경
 
@@ -73,6 +75,8 @@ const bgList = [
 ];
 ```
 
+---
+
 - 이후 리스트 크기보다 작은 크기의 랜덤 정수를 생성하는 `randNum` 변수를 하나 만들고, `backtick`, `${}`를 이용해서 url안에 리스트를 넣어주게 되면 해당 포스트에 들어갈때 마다 배경화면이 바뀌게 된다.
 
 ```js
@@ -93,7 +97,7 @@ bg.style.backgroundImage = `url(${bgList[randNum]})`;
 
 ---
 
-이미지를 더 추가해주고 싶다면 `bgList`에 주소값만 계속 추가하면 된다.
+이미지를 더 추가하고 싶다면 `bgList`에 주소값만 계속 추가해주면 된다.
 
 <br/>
 

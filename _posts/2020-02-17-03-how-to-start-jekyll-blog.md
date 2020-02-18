@@ -3,7 +3,6 @@ layout: post
 title: "무료 깃허브 블로그, 지킬을 이용하여 시작하기"
 subtitle: "github pages, blog with jekyll"
 date: 2020-02-17 15:30:00 +0900
-background: '/img/posts/03.jpg'
 ---
 
 jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markdown` 을 지원하여 편하게 블로그 포스팅을 할 수 있게 해준다.
@@ -16,7 +15,7 @@ jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markd
 
 # 1. 깃허브 레포지토리 생성
 
-깃허브에서 블로그용 새 레포지토리를 생성
+깃허브에서 블로그용 새 레포지토리를 생성한다.
 
 <br />
 
@@ -61,7 +60,7 @@ url:                "https://syki66.github.io"
 
 # 4. 웹사이트 무료 호스팅
 
-생성된 레포지토리의 `Settings` -> `GitHub Pages` -> `Source` -> `master branch`를 체크
+생성된 레포지토리의 `Settings` -> `GitHub Pages` -> `Source`에서 `master branch`를 체크
 
 `your site is published at ~~` 이렇게 표시가 되게 된다. 이후 옆에 링크를 누르게 되면 정상적으로 블로그 호스팅이 성공한 것을 확인할수 있다.
 
@@ -73,7 +72,15 @@ url:                "https://syki66.github.io"
 
 # 5. 블로그 포스팅
 
-포스트 생성은 `_posts` 폴더에서 `markdown` 파일을 만들어서 블로그를 작성하면 되며, markdown 파일 상단에 아래코드를 추가하고 알맞게 수정한 뒤, 밑에 `markdown` 문법을 이용하여 포스트를 작성하면됨 - ([markdown 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601))
+포스트 생성은 `_posts` 폴더에서 `markdown` 파일을 만들어서 블로그를 작성하면 되며 이름은 아래와 같은 규칙으로 하면된다.
+
+`YYYY-MM-DD-title.md`
+
+```
+> 2020-02-17-how-to-start-jekyll-blog.md
+```
+
+markdown 파일 상단에 아래의 `yml`코드를 추가하고 알맞게 수정한 뒤, 밑에 `markdown` 문법을 이용하여 포스트를 작성하면됨 - ([markdown 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601))
 
 ```yml
 ---
