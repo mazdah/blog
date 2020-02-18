@@ -1,0 +1,1 @@
+return 'https://cdn.pixabay.com/photo/2013/08/28/12/03/plumage-176723_960_720.jpg';
