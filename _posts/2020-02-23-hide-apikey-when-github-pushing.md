@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리액트 깃허브 푸시 API KEY 숨기기"
+title: "리액트, 깃허브 푸시할때 API KEY 숨기기"
 subtitle: "React JS, Github"
 date: 2020-02-23 18:30:00 +0900
 ---
@@ -8,7 +8,7 @@ date: 2020-02-23 18:30:00 +0900
 
 # 1. 프로젝트의 루트폴더에 `.env` 파일 생성
 
-.env 파일에 변수명 앞에 반드시 `REACT_APP_` 붙여서 변수명을 설정하고 API 키를 입력한다.
+루트폴더에 `.env` 파일 생성후, 들어가서 변수명 앞에 반드시 `REACT_APP_` 붙여서 변수명을 설정하고 API 키를 입력한다.
 
 ```
 REACT_APP_API=AbCdEfG
