@@ -28,7 +28,9 @@ REACT_APP_API=AbCdEfG
 
 # 3. 코드작성시
 
-코드 작성시에는 `process.env.REACT_APP_API` 를 이용해서 API 키를 사용하면된다.
+코드 작성시에는 `process.env.REACT_APP_API` 를 이용해서 API 키를 사용하면되며
+
+로컬서버를 다시 실행시키면 적용된 것을 볼수있다.
 
 <br />
 
