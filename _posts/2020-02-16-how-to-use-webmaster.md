@@ -47,7 +47,7 @@ plugins:
 
 루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
 
-```
+```xml
 {% raw %}
 ---
 layout: null
