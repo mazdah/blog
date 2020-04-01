@@ -87,6 +87,8 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 *`sitemap.xml`은 사이트를 크롤링 하기 쉽게 만들어주고, `robot.txt`로 크롤링 허용 범위 설정 및 사이트맵을 쉽게 가져가도록 해준다.*
 
+[robots.txt 사용법](https://support.google.com/webmasters/answer/6062596?hl=ko)
+
 <br />
 
 ---
