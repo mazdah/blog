@@ -31,6 +31,58 @@ html을 본인 블로그 디렉토리의 `루트폴더`에 집어넣고 깃허�
 
 ---
 
+<!-- # 2. `sitemap.xml` 생성
+
+먼저 `_config.yml`에 들어가서 플러그인에 `- jekyll-sitemap`를 추가해준다.
+
+```yml
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+``` -->
+
+# 2. `sitemap.xml` 생성
+
+루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
+
+```xml
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
+</urlset>
+```
+
+
+
+
+
+
 # 2. `sitemap.xml` 제출
 
 루비 터미널에 들어가서 아래 코드 입력하여 설치하면 자동으로 `sitemap.xml`과 `robot.txt`가 생성됨
@@ -63,3 +115,8 @@ plugins:
 ![image](https://user-images.githubusercontent.com/59393359/74607783-14061380-511f-11ea-8b04-da84a428b232.png)
 
 <br/>
+
+
+## 참고링크
+
+[http://dveamer.github.io/homepage/Sitemap.html](http://dveamer.github.io/homepage/Sitemap.html)
