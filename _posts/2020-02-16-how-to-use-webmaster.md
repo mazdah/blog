@@ -3,8 +3,8 @@ layout: post
 title: "깃허브 지킬 블로그를 구글에서 검색되도록 설정하기"
 subtitle: "웹마스터 (webmaster), github jekyll blog"
 date: 2020-02-16 14:30:00 +0900
-background: '/img/posts/01.jpg'
 lastmod: 2020-04-01 23:00:00 +0900
+background: '/img/posts/01.jpg'
 ---
 
 
@@ -91,7 +91,7 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 ---
 
-# 3. `sitemap.xml` 제출
+# 4. `sitemap.xml` 제출
 
 `google search console` 의 `Sitemaps` 메뉴에 들어가서 `sitemap.xml`을 제출
 

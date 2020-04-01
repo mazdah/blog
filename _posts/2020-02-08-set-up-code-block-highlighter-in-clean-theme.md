@@ -3,6 +3,7 @@ layout: post
 title: "지킬(jekyll)의 clean blog 테마에서 코드블럭, 하이라이터 설정하기"
 subtitle: "+ 지킬(jekyll) 코드블럭 자동 줄바꿈 설정하기"
 date: 2020-02-08 18:30:00 +0900
+lastmod: 2020-04-02 00:30:00 +0900
 background: '/img/posts/03.jpg'
 ---
 
@@ -93,7 +94,7 @@ highlighter: rouge
 
 ***
 
-#### 추가로 코드블럭의 스크롤을 없애고 자동 줄바꿈 기능을 넣고 싶다면
+### 추가1 : 코드블럭의 스크롤을 없애고 자동 줄바꿈 기능을 넣고 싶다면
 
 <img src="https://user-images.githubusercontent.com/59393359/74085871-ec7cce80-4ac0-11ea-8d0f-7fc9ea363121.PNG" style="border-style: dashed; border-color: gray;">
 
@@ -118,6 +119,24 @@ pre.highlight {
 <br/>
 
 ***
+
+### 추가2 : xml, html 등에서 코드블럭 익스케이프
+
+그냥 구문을 작성하다 보면 코드블럭에서 그 구문이 실행되 버리는 경우가 있는데 그럴땐 아래 방법으로 이스케이프 구문을 사용하면 된다.
+
+`{% raw %} ~ {% endraw %}`
+
+&#96;&#96;&#96;html<br />
+&emsp;&#123;&#37; raw &#37;&#125;<br />
+&emsp;&emsp;&#60;div id="post-disqus" class="container"&#62;<br />
+&emsp;&emsp;&emsp;&#123;&#37; include disqus.html &#37;&#125;<br />
+&emsp;&emsp;&#60;/div&#62;<br />
+&emsp;&#123;&#37; endraw 	&#37;&#125;<br />
+&#96;&#96;&#96;
+
+<br />
+
+---
 
 ## 참고 링크
 

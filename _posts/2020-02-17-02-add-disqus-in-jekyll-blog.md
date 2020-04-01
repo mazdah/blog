@@ -3,6 +3,7 @@ layout: post
 title: "깃허브 지킬 블로그에 댓글(디스커스) 기능 추가하기"
 subtitle: "github jekyll blog, Disqus"
 date: 2020-02-17 13:30:00 +0900
+lastmod: 2020-02-17 13:30:00 +0900
 ---
 
 # 1. Disqus 가입하기
@@ -83,11 +84,13 @@ date: 2020-02-17 13:30:00 +0900
 
 `_layouts` 폴더의 `post.html`의 맨 아래에다가 아래의 코드 추가
 
-<div style="background-color:#272822; padding:5px">
-  <span style="color:#c32772">&#60;div <span style="color:#9ae22e">id=</span><span style="color:#e6db67">"post-disqus"</span> <span style="color:#9ae22e">class=</span><span style="color:#e6db67">"container"</span>&#62;<br/>
-    <span style="color:#f1ffff">&#160;&#160;&#160;&#160;&#123;&#37; include disqus.html &#37;&#125;</span><br/>
-  &#60;/div&#62;</span>
+```html
+{% raw %}
+<div id="post-disqus" class="container">
+  {% include disqus.html %}
 </div>
+{% endraw %}
+```
 
 <br/>
 

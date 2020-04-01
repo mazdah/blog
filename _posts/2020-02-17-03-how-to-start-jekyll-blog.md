@@ -3,6 +3,7 @@ layout: post
 title: "무료 깃허브 블로그, 지킬을 이용하여 시작하기"
 subtitle: "github pages, blog with jekyll"
 date: 2020-02-17 15:30:00 +0900
+lastmod: 2020-02-17 15:30:00 +0900
 ---
 
 jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markdown` 을 지원하여 편하게 블로그 포스팅을 할 수 있게 해준다.

@@ -3,6 +3,7 @@ layout: post
 title: "깃허브 지킬(jekyll) 블로그 로컬 서버 구성하기"
 subtitle: "with Ruby"
 date: 2020-02-06 11:30:00 +0900
+lastmod: 2020-02-06 11:30:00 +0900
 background: '/img/posts/05.jpg'
 ---
 

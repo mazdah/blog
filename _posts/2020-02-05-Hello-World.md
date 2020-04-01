@@ -3,6 +3,7 @@ layout: post
 title: "Hello World!!"
 subtitle: "^__^"
 date: 2020-02-05 16:30:00 +0900
+lastmod: 2020-02-05 16:30:00 +0900
 background: '/img/posts/06.jpg'
 ---
 

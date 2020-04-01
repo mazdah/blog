@@ -3,6 +3,7 @@ layout: post
 title: "리액트, 깃허브 페이지를 이용하여 무료 웹호스팅하기"
 subtitle: "React js, deploy github pages"
 date: 2020-02-13 17:30:00 +0900
+lastmod: 2020-02-13 17:30:00 +0900
 background: '/img/posts/02.jpg'
 ---
 
