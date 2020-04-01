@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syki66.github.io/blog/sitemap.xml

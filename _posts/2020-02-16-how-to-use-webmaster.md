@@ -32,17 +32,6 @@ html을 본인 블로그 디렉토리의 `루트폴더`에 집어넣고 깃허�
 
 ---
 
-<!-- # 2. `sitemap.xml` 생성
-
-먼저 `_config.yml`에 들어가서 플러그인에 `- jekyll-sitemap`를 추가해준다.
-
-```yml
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-``` -->
-
 # 2. `sitemap.xml` 생성
 
 루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
@@ -81,40 +70,28 @@ layout: null
 {% endraw %}
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 2. `sitemap.xml` 제출
-
-루비 터미널에 들어가서 아래 코드 입력하여 설치하면 자동으로 `sitemap.xml`과 `robot.txt`가 생성됨
-(`sitemap.xml`은 사이트를 크롤링 하기 쉽게 만들어주고, `robot.txt`로 크롤링 허용 범위를 설정함)
-
-```
-> gem install jekyll-sitemap
-```
+<br />
 
 ---
 
-설치가 된 이후 `_config.yml` 에 들어가서 밑에 코드 추가 (이미 url 추가되있다면 `plugins` 만 추가하면됨)
+# 3. `robots.txt` 생성
 
-```yml
-url: "https://syki66.github.io"
-plugins:
-  - jekyll-sitemap
+루트 폴더에 `robots.txt` 파일을 생성하고 아래의 내용을 넣어줍니다.
+
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://syki66.github.io/blog/sitemap.xml
 ```
 
+*`sitemap.xml`은 사이트를 크롤링 하기 쉽게 만들어주고, `robot.txt`로 크롤링 허용 범위 설정 및 사이트맵을 쉽게 가져가도록 해준다.*
+
+<br />
+
 ---
+
+# 3. `sitemap.xml` 제출
 
 `google search console` 의 `Sitemaps` 메뉴에 들어가서 `sitemap.xml`을 제출
 
@@ -128,6 +105,7 @@ plugins:
 
 <br/>
 
+---
 
 ## 참고링크
 
