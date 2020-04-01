@@ -47,37 +47,48 @@ plugins:
 
 루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
 
-```xml
+```
+{% raw %}
 ---
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts | xml_escape %}
+  {% for post in site.posts %}
     <url>
-      <loc>{{ site.url | xml_escape }}{{ post.url | xml_escape }}</loc>
-      {% if post.lastmod == null | xml_escape %}
-        <lastmod>{{ post.date | date_to_xmlschema | xml_escape }}</lastmod>
-      {% else | xml_escape %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema | xml_escape }}</lastmod>
-      {% endif | xml_escape %}
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
 
-      {% if post.sitemap.changefreq == null | xml_escape %}
+      {% if post.sitemap.changefreq == null %}
         <changefreq>weekly</changefreq>
-      {% else | xml_escape %}
-        <changefreq>{{ post.sitemap.changefreq | xml_escape }}</changefreq>
-      {% endif | xml_escape %}
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
 
-      {% if post.sitemap.priority == null | xml_escape %}
+      {% if post.sitemap.priority == null %}
           <priority>0.5</priority>
-      {% else | xml_escape %}
-        <priority>{{ post.sitemap.priority | xml_escape }}</priority>
-      {% endif | xml_escape %}
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
 
     </url>
   {% endfor %}
 </urlset>
+{% endraw %}
 ```
+
+
+
+
+
+
+
+
+
 
 
 
