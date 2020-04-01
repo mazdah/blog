@@ -47,35 +47,35 @@ plugins:
 
 루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
 
-```
+```xml
 ---
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
+  {&#37; for post in site.posts &#37;}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
+      {&#37; if post.lastmod == null &#37;}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
+      {&#37; else &#37;}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      {&#37; endif &#37;}
 
-      {% if post.sitemap.changefreq == null %}
+      {&#37; if post.sitemap.changefreq == null &#37;}
         <changefreq>weekly</changefreq>
-      {% else %}
+      {&#37; else &#37;}
         <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
+      {&#37; endif &#37;}
 
-      {% if post.sitemap.priority == null %}
+      {&#37; if post.sitemap.priority == null &#37;}
           <priority>0.5</priority>
-      {% else %}
+      {&#37; else &#37;}
         <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+      {&#37; endif &#37;}
 
     </url>
-  {% endfor %}
+  {&#37; endfor &#37;}
 </urlset>
 ```
 
