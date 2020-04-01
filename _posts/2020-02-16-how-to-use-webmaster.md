@@ -4,6 +4,7 @@ title: "깃허브 지킬 블로그를 구글에서 검색되도록 설정하기"
 subtitle: "웹마스터 (webmaster), github jekyll blog"
 date: 2020-02-16 14:30:00 +0900
 background: '/img/posts/01.jpg'
+lastmod: 2020-04-01 23:00:00 +0900
 ---
 
 
@@ -46,7 +47,7 @@ plugins:
 
 루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
 
-```xml
+```
 ---
 layout: null
 ---
