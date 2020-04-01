@@ -53,29 +53,29 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {&#37; for post in site.posts &#37;}
+  {% for post in site.posts | xml_escape %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {&#37; if post.lastmod == null &#37;}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {&#37; else &#37;}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {&#37; endif &#37;}
+      <loc>{{ site.url | xml_escape }}{{ post.url | xml_escape }}</loc>
+      {% if post.lastmod == null | xml_escape %}
+        <lastmod>{{ post.date | date_to_xmlschema | xml_escape }}</lastmod>
+      {% else | xml_escape %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema | xml_escape }}</lastmod>
+      {% endif | xml_escape %}
 
-      {&#37; if post.sitemap.changefreq == null &#37;}
+      {% if post.sitemap.changefreq == null | xml_escape %}
         <changefreq>weekly</changefreq>
-      {&#37; else &#37;}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {&#37; endif &#37;}
+      {% else | xml_escape %}
+        <changefreq>{{ post.sitemap.changefreq | xml_escape }}</changefreq>
+      {% endif | xml_escape %}
 
-      {&#37; if post.sitemap.priority == null &#37;}
+      {% if post.sitemap.priority == null | xml_escape %}
           <priority>0.5</priority>
-      {&#37; else &#37;}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {&#37; endif &#37;}
+      {% else | xml_escape %}
+        <priority>{{ post.sitemap.priority | xml_escape }}</priority>
+      {% endif | xml_escape %}
 
     </url>
-  {&#37; endfor &#37;}
+  {% endfor %}
 </urlset>
 ```
 
