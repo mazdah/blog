@@ -116,3 +116,5 @@ function parseText(text) {
 ## 참고 링크
 
 [mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)
+
+<br />

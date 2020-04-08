@@ -3,7 +3,7 @@ layout: post
 title: "깃허브 지킬 블로그를 구글에서 검색되도록 설정하기"
 subtitle: "웹마스터 (webmaster), github jekyll blog"
 date: 2020-02-16 14:30:00 +0900
-lastmod: 2020-04-01 23:00:00 +0900
+lastmod: 2020-04-08 15:00:00 +0900
 background: '/img/posts/01.jpg'
 ---
 
@@ -70,6 +70,14 @@ layout: null
 {% endraw %}
 ```
 
+만약 `baseurl`을 사용하고 있다면 `loc` 태그 부분에 아래와 같이 쓰면 된다.
+
+```xml
+{% raw %}
+<loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+{% endraw %}
+```
+
 <br />
 
 ---
@@ -112,3 +120,5 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 ## 참고링크
 
 [http://dveamer.github.io/homepage/Sitemap.html](http://dveamer.github.io/homepage/Sitemap.html)
+
+<br />

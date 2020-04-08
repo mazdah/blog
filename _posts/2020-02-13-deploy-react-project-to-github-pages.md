@@ -76,3 +76,5 @@ scripts 안에 deploy와 predeploy를 추가시킨다.
 ```
 
 위 코드를 실행하게 되면 `predeploy`가 먼저호출되어 `build` 디렉토리를 만들고, 이후 `deploy`가 실행되어 `build` 디렉토리에 있는 파일들을 깃허브 페이지로 웹호스팅 시켜준다.
+
+<br />
