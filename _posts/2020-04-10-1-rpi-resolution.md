@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title: "라즈베리파이 해상도 2560x1080으로 설정하기"
 date: 2020-04-09 11:50:00 +0900
 lastmod: 2020-04-09 11:50:00 +0900
+author_profile: false
 ---
 
 - 관련 포스트 : 

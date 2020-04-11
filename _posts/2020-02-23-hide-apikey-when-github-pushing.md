@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: single
 title: "리액트, 깃허브 푸시할때 API KEY 숨기기"
 subtitle: "React JS, Github"
 date: 2020-02-23 18:30:00 +0900
 lastmod: 2020-02-23 18:30:00 +0900
+author_profile: false
 ---
 
 

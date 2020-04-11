@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: single
 title: "바닐라 자바스크립트를 이용하여 로컬 파일 불러오기"
 subtitle: "with html, javascript"
 date: 2020-02-07 14:30:00 +0900
 lastmod: 2020-02-07 14:30:00 +0900
 background: '/img/posts/04.jpg'
+author_profile: false
 ---
 
 일반적으로 `html`과 `javascript`에서 로컬에 있는 파일을 불러와서 작업을 하고 싶을때 `cors`라는 정책 때문에 직접 불러올 수가 없어서

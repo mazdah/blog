@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: single
 title: "지킬(jekyll)의 clean blog 테마에서 코드블럭, 하이라이터 설정하기"
 subtitle: "+ 지킬(jekyll) 코드블럭 자동 줄바꿈 설정하기"
 date: 2020-02-08 18:30:00 +0900
 lastmod: 2020-04-02 00:30:00 +0900
 background: '/img/posts/03.jpg'
+author_profile: false
 ---
 
 최근 깃허브를 이용해서 블로그를 시작하였는데, 지킬 무료 테마를 찾던중에 [Clean Blog Theme](http://jekyllthemes.org/themes/clean-blog/) 가 맘에 들어서 적용했다.

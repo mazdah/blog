@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: single
 title: "윈도우 10에서 사용자 다중접속하여 컴퓨터 성능 나누어 쓰기"
 subtitle: "RDP Wrapper, 다중접속 원격데스크톱, windows 10 pro"
 date: 2020-04-08 15:50:00 +0900
 lastmod: 2020-04-08 15:50:00 +0900
+author_profile: false
 ---
 
 일반적으로 윈도우 10 pro 이상에서 원격 데스크톱 모드를 지원한다. 하지만 pc당 한명의 사용자만 접속할수 있고, 다른 사용자가 접속할시 자동으로 나머지 pc에서 강제 로그아웃이 된다.

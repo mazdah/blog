@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: single
 title: "github의 issue를 사용해서 깃허브 서버에 사진 업로드"
 subtitle: "지킬(jekyll) 블로그, 로컬 말고 서버에서 사진 가져오기"
 date: 2020-02-17 01:30:00 +0900
 lastmod: 2020-02-17 01:30:00 +0900
+author_profile: false
 ---
 
 마크다운 파일을 작성하다 보면 사진들을 업로드 해야하는 경우가 종종 있는데, 이 사진들을 로컬에서 직접 관리하기가 복잡해져서 [imgur](https://imgur.com/)을 쓰다가 좀더 안정적으로 쓰고 싶어 `github`의 `issues`를 이용해 사진 올리는 법을 적어본다.

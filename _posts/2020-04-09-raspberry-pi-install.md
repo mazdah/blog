@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title: "간단하게 라즈베리파이에 라즈비안 설치하기"
 date: 2020-04-09 11:50:00 +0900
 lastmod: 2020-04-09 11:50:00 +0900
+author_profile: false
 ---
 
 몇년전 쯤만 해도 라즈베리파이에 운영체제를 설치하려면 ISO 파일을 받고, sd카드가 exfat이면 강제로 fat32로 변환시켜준다음 win32diskimager로 이미지를 구워야 했는데, 최근에 Raspberry Pi Imager를 출시하면서 상당히 간편해진 사용법을 소개한다.

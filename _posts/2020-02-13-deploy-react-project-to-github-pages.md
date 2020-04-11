@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: single
 title: "리액트, 깃허브 페이지를 이용하여 무료 웹호스팅하기"
 subtitle: "React js, deploy github pages"
 date: 2020-02-13 17:30:00 +0900
 lastmod: 2020-02-13 17:30:00 +0900
 background: '/img/posts/02.jpg'
+author_profile: false
 ---
 
 우선 깃허브의 private 무료버전에서는 호스팅이 불가능하기 때문에 깃허브 레포지토리가 public으로 설정 되어있어야 한다. (유료요금제를 쓰고 있다면 private 호스팅 가능)
