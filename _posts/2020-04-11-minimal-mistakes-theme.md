@@ -9,6 +9,11 @@ lastmod: 2020-04-12 11:50:00 +0900
 
 author_profile: false
 
+toc: true
+toc_label: "Contents"
+toc_icon: "bars"
+toc_sticky: true
+
 header:
   overlay_image: https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
   overlay_filter: 0.5
@@ -19,13 +24,10 @@ categories:
 tags: 
     - test
     - theme
-
-# table of content
-toc: true
-toc_label: "Contents"
-toc_icon: "bars"
-toc_sticky: true
 ---
+
+
+
 
 clean-blog 테마가 질리기도 하고 수동으로 바꾸어야 되는 설정들이 꽤 많고 귀찮아서, 가장 인기있고 커스터마이징 및 기타 관리가 쉬운 minimal-mistakes 테마로 바꾸게 되었다.
 
@@ -182,7 +184,7 @@ main:
 
 ---
 
-# 5. 포스트 개별 front matter 설정
+# 6. 포스트 개별 front matter 설정
 
 기본적으로 아래와 같이 설정하면 되며, 본인의 취향에 맞게 추가 설정을 하면 되며, toc 아이콘 설정은 [fontawesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) 링크로 들어가서 원하는 아이콘으로 설정하면 된다.
 
@@ -218,3 +220,15 @@ toc_sticky: true # 마우스 스크롤과 함께 내려갈 것인지 설정
 <br/>
 
 ---
+
+# 7. 로컬서버 구성
+
+링크
+
+`Gemfile
+
+```
+source "https://rubygems.org"
+
+gem "minimal-mistakes-jekyll"
+```

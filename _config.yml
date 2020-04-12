@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "syki blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "셀프 참고하는 블로그" # site tagline that appears below site title in masthead
 name                     : "syki66"
-description              : "셀프 참조 블로그"
+description              : "셀프 참고 블로그"
 url                      : "https://syki66.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
 repository               : "syki66/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
