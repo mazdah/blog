@@ -8,6 +8,7 @@ background: '/img/posts/01.jpg'
 author_profile: false
 ---
 
+<br>
 
 # 1. `google seach console` 접속 & 인증
 
@@ -29,7 +30,7 @@ html을 본인 블로그 디렉토리의 `루트폴더`에 집어넣고 깃허�
 
 ![캡처2](https://user-images.githubusercontent.com/59393359/74607306-431a8600-511b-11ea-9071-fcd7ee8f0c83.PNG)
 
-<br/>
+<br>
 
 ---
 
@@ -79,7 +80,7 @@ layout: null
 {% endraw %}
 ```
 
-<br />
+<br>
 
 ---
 
@@ -98,7 +99,7 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 [robots.txt 사용법](https://support.google.com/webmasters/answer/6062596?hl=ko)
 
-<br />
+<br>
 
 ---
 
@@ -114,7 +115,7 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 ![image](https://user-images.githubusercontent.com/59393359/74607783-14061380-511f-11ea-8b04-da84a428b232.png)
 
-<br/>
+<br>
 
 ---
 
@@ -122,4 +123,4 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 [http://dveamer.github.io/homepage/Sitemap.html](http://dveamer.github.io/homepage/Sitemap.html)
 
-<br />
+<br><br><br><br>

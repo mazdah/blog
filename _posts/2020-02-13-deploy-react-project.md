@@ -8,9 +8,11 @@ background: '/img/posts/02.jpg'
 author_profile: false
 ---
 
+<br>
+
 우선 깃허브의 private 무료버전에서는 호스팅이 불가능하기 때문에 깃허브 레포지토리가 public으로 설정 되어있어야 한다. (유료요금제를 쓰고 있다면 private 호스팅 가능)
 
-<br/>
+<br>
 
 ***
 
@@ -26,7 +28,7 @@ author_profile: false
 "homepage": "https://syki66.github.io/tEsT/"
 ```
 
-<br/>
+<br>
 
 ***
 
@@ -38,7 +40,7 @@ author_profile: false
 > npm install gh-pages
 ```
 
-<br/>
+<br>
 
 ***
 
@@ -66,7 +68,7 @@ scripts 안에 deploy와 predeploy를 추가시킨다.
   }
 ```
 
-<br/>
+<br>
 
 ***
 
@@ -78,4 +80,4 @@ scripts 안에 deploy와 predeploy를 추가시킨다.
 
 위 코드를 실행하게 되면 `predeploy`가 먼저호출되어 `build` 디렉토리를 만들고, 이후 `deploy`가 실행되어 `build` 디렉토리에 있는 파일들을 깃허브 페이지로 웹호스팅 시켜준다.
 
-<br />
+<br><br><br><br>

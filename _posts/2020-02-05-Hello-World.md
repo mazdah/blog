@@ -4,8 +4,8 @@ title: "Hello World!!"
 subtitle: "^__^"
 date: 2020-02-05 16:30:00 +0900
 lastmod: 2020-02-05 16:30:00 +0900
-background: '/img/posts/06.jpg'
-author_profile: false
+tags: 
+    - hello world
 ---
 
 # Hello World
@@ -16,12 +16,16 @@ author_profile: false
 print("Hello World!!")
 ```
 
+<br>
+
 ***
 
 ## **자바스크립트**
 ~~~javascript
 console.log("Hello World!!");
 ~~~
+
+<br>
 
 ***
 
@@ -30,6 +34,8 @@ console.log("Hello World!!");
 printf("Hello World!!");
 ```
 
+<br>
+
 ***
 
 ## **자바**
@@ -37,4 +43,4 @@ printf("Hello World!!");
 System.out.println("Hello World!!");
 ```
 
-<br />
+<br><br><br><br>

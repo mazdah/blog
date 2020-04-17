@@ -1,6 +1,7 @@
 ---
 layout: article
-title: "texttheme"
+title: "지킬 TeXt 테마 초기 설정하기"
+subtitle: ""
 date: 2020-04-17 13:50:00 +0900
 lastmod: 2020-04-17 13:50:00 +0900
 tags: 
@@ -11,9 +12,11 @@ tags:
     - text
 ---
 
-원래 minimal mistake theme 을 사용하려고 해서 적용했는데 막상 적용하고 나니까 디자인이 아쉬워서 세부적으로 커스터마이징 하다가 굳이 이렇게까지 해야되나 급 현타가 와서 다른 테마 그냥 찾아봤는데, 마침 TeXt 라는 테마를 찾아서 적용해보았다.
+<br>
 
-<br/>
+원래 minimal mistake theme 을 사용하려고 해서 적용했는데 막상 적용하고 나니까 디자인이 아쉬워서 세부적으로 커스터마이징 하다가 굳이 이렇게까지 해야되나 급 현타가 와서 그냥 다른 완성도 높은 테마를 찾아봤는데, 마침 TeXt 라는 테마를 찾아서 적용해보았다.
+
+<br>
 
 ---
 
@@ -21,7 +24,7 @@ tags:
 
 [TeXt 공식문서](https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start)에 들어가보면 다양한 방법으로 지원하는데. clone, zip파일 다운로드 등 자신이 편리한 방법으로 하면된다. 
 
-<br/>
+<br>
 
 ---
 
@@ -29,15 +32,11 @@ tags:
 
 docker를 사용하거나 루비와 지킬을 설치하고 아래 명령어를 입력하면 127.0.0.1:4000 로컬 구성 완료됨
 
-참고
+[지킬 로컬서버를 구성](https://syki66.github.io/blog/2020/02/06/jekyll-local-server.html)하기 위해 셋팅하고 나서 `bundle exec jekyll serve` 하면 된다.
 
-`bundle exec jekyll serve` 하면 끝
+로컬서버에서만 보이는 초안 작성을 하고 싶으면 `_drafts` 디렉토리 생성후 여기에 마크다운 파일을 작성해주면 된다. *(bundle exec jekyll serve --drafts)*
 
-로컬에서만 보이는 초안 작성을 하고 싶으면 `_drafts` 디렉토리 생성후 여기에 마크다운 파일을 작성해주면 된다.
-
-(bundle exec jekyll serve --drafts 로 입력해야 보임)
-
-<br/>
+<br>
 
 ---
 
@@ -108,7 +107,7 @@ defaults:
           gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
 ```
 
-<br/>
+<br>
 
 ---
 
@@ -118,8 +117,10 @@ favicon 변경은 [RealFaviconGenerator](https://realfavicongenerator.net/)로 �
 
 로고 변경은 `/assets/safari-pinned-tab.svg`의 svg 태그를 복사해서 `assets/images/logo/logo.svg`에 붙여넣으면 된다.
 
-<br/>
+<br>
 
 ---
 
 세부적인 커스터마이징 하려면
+
+<br><br><br><br>
