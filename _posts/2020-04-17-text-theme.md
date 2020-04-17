@@ -1,14 +1,11 @@
 ---
 layout: article
 
-title: "minimal mistake theme 지킬 블로그 커스터마이징하기"
+title: "texttheme"
 # excerpt: ""
 
-date: 2020-04-12 13:50:00 +0900
-lastmod: 2020-04-12 13:50:00 +0900
-
-categories: 
-  - blog
+date: 2020-04-17 13:50:00 +0900
+lastmod: 2020-04-17 13:50:00 +0900
 
 tags: 
     - blog
@@ -30,5 +27,4 @@ article_header:
 
 ---
 
-
-그냥 bundle exec jekyll serve 하면됨.
+그냥 bundle exec jekyll serve 하면됨.s
