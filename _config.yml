@@ -22,7 +22,7 @@ url     : "https://syki66.github.io" # the base hostname & protocol for your sit
 baseurl : "/blog" # does not include hostname
 title   : "syki blog"
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  혼자 참고하는 블로그
 
 
 ## => Language and Timezone
@@ -214,7 +214,6 @@ defaults:
         toc: true
       show_edit_on_github: false
       show_subscribe: true
-      pageview: true
       key: anything
       mode: immersive
       header:
@@ -224,6 +223,7 @@ defaults:
         theme: dark
         background_image:
           src: https://user-images.githubusercontent.com/59393359/74720914-e4b7e980-5279-11ea-9532-c262caf64f00.jpg
+          gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
       
 
 

@@ -1,26 +1,8 @@
 ---
 layout: article
-
 title: "minimal mistake theme 지킬 블로그 초기 설정하기"
-# excerpt: ""
-
 date: 2020-04-11 20:50:00 +0900
 lastmod: 2020-04-12 11:50:00 +0900
-
-author_profile: false
-
-toc: true
-toc_label: "Contents"
-toc_icon: "bars"
-toc_sticky: true
-
-header:
-  overlay_image: https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-  overlay_filter: 0.5
-
-categories: 
-  - blog
-
 tags: 
     - test
     - theme

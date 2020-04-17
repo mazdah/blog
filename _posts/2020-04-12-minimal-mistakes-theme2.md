@@ -3,7 +3,6 @@ layout: article
 title: "minimal mistake theme 지킬 블로그 커스터마이징하기"
 date: 2020-04-12 13:50:00 +0900
 lastmod: 2020-04-12 13:50:00 +0900
-
 tags: 
     - blog
     - theme

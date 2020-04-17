@@ -3,25 +3,9 @@ layout: article
 title: "라즈베리파이에서 윈도우10으로 원격 데스크톱 연결하기 (xfreerdp)"
 date: 2020-04-09 16:50:00 +0900
 lastmod: 2020-04-09 16:50:00 +0900
-
-show_overlay_excerpt: false
-show_excerpts: false
-show_overlay_excerpt: false
-header:
-  overlay_image: https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-
-categories: 
-  - raspberry pi
-
 tags: 
     - rdp
     - xfree
-
-toc: true
-toc_sticky: true
-author_profile: false
-
 ---
 
 관련포스트 : 
