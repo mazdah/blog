@@ -6,6 +6,4 @@
 
 feed.xml 활용법
 
-key: anything 옵션 넣어줘야 디스커스 가능
-
 svg 변경

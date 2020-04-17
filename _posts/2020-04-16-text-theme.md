@@ -33,6 +33,10 @@ docker를 사용하거나 루비와 지킬을 설치하고 아래 명령어를 �
 
 `bundle exec jekyll serve` 하면 끝
 
+로컬에서만 보이는 초안 작성을 하고 싶으면 `_drafts` 디렉토리 생성후 여기에 마크다운 파일을 작성해주면 된다.
+
+(bundle exec jekyll serve --drafts 로 입력해야 보임)
+
 <br/>
 
 ---
