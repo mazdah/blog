@@ -221,9 +221,6 @@ defaults:
       article_header:
         type: overlay
         theme: dark
-        background_image:
-          gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
-      
 
 
 ## => Plugins
