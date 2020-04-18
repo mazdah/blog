@@ -45,7 +45,7 @@ npm install gh-pages
 
 # 3. `"scripts"` 수정
 
-package.json의 scripts 안에 deploy와 predeploy를 추가시킨다.
+`package.json`의 `scripts` 안에 `deploy`와 `predeploy`를 추가시킨다.
 
 ```json
 "deploy": "gh-pages -d build",
@@ -71,12 +71,12 @@ package.json의 scripts 안에 deploy와 predeploy를 추가시킨다.
 
 ***
 
-# 4. deploy
+# 4. 명령문 입력
+
+아래 명령문을 실행하게 되면 `predeploy`가 먼저호출되어 `build` 디렉토리를 만들고, 이후 `deploy`가 실행되어 `build` 디렉토리에 있는 파일들을 깃허브 페이지로 웹호스팅 시켜준다.
 
 ```
 npm run deploy
 ```
-
-위 코드를 실행하게 되면 `predeploy`가 먼저호출되어 `build` 디렉토리를 만들고, 이후 `deploy`가 실행되어 `build` 디렉토리에 있는 파일들을 깃허브 페이지로 웹호스팅 시켜준다.
 
 <br><br><br><br>

@@ -124,6 +124,6 @@ favicon 변경은 [RealFaviconGenerator](https://realfavicongenerator.net/)로 �
 
 # 5. 세부 커스터마이징
 
-좀 더 세부적인 커스터마이징 하려면 [여기를 클릭]()
+좀 더 세부적인 커스터마이징 하려면 [여기를 클릭](https://syki66.github.io/blog/2020/04/17/TeXt-theme-detailed-customization.html)
 
 <br><br><br><br>

@@ -13,7 +13,7 @@ tags:
 
 <br>
 
-# 1. 하단의 "Powered by" 제거
+# 1. 하단의 "Powered by" 문구 제거
 
 아래 디렉토리로 들어가 하단의 코드를 삭제한다.
 
@@ -84,6 +84,11 @@ code {
   line-height: map-get($base, line-height-sm);
   font-weight: map-get($base, font-weight-bold); // 인라인, 블록 코드의 폰트 굵기 변경 가능
   color: #ff006a; // 인라인 코드의 폰트 색상 변경
+}
+
+// 여기 부분을 추가해줘야 인라인 코드와 블록 코드의 색을 다르게 설정 할수 있다.
+pre code {
+  color: #eaeaea; // 블록 코드 색상 변경
 }
 ```
 
@@ -157,5 +162,6 @@ code {
 
 ---
 
-# 코드블럭 자동줄바꿈 적용하기
+# `코드블럭` 자동줄바꿈 적용하기
 # 본문 중앙정렬
+# 후크 걸기

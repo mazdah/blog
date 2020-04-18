@@ -1,34 +1,37 @@
 ---
 layout: article
-title: "깃허브 지킬 블로그를 구글에서 검색되도록 설정하기"
-subtitle: "웹마스터 (webmaster), github jekyll blog"
+title: "구글에서 지킬 블로그가 검색되도록 설정하기"
+subtitle: "Google Search Console 이용"
 date: 2020-02-16 14:30:00 +0900
 lastmod: 2020-04-08 15:00:00 +0900
-background: '/img/posts/01.jpg'
-author_profile: false
+tags: 
+    - webmaster
+    - blog
+    - sitemap.xml
+    - robots.txt
 ---
 
 <br>
 
 # 1. `google seach console` 접속 & 인증
 
-[google search console](https://search.google.com/search-console/welcome?utm_source=about-page) 로 들어가서 본인 소유 블로그의 url 입력
+[google search console](https://search.google.com/search-console/welcome?utm_source=about-page){:.border.rounded} 로 들어가서 본인 소유 블로그의 url 입력
 
-![캡처](https://user-images.githubusercontent.com/59393359/74607293-1ebea980-511b-11ea-8724-9213904f89fe.PNG)
+![캡처](https://user-images.githubusercontent.com/59393359/74607293-1ebea980-511b-11ea-8724-9213904f89fe.PNG){:.border.rounded}
 
----
+<br>
 
 구글에서 제공하는 인증용 html 파일 다운로드 (본인 소유인지 확인하기 위해)
 
-![캡처1](https://user-images.githubusercontent.com/59393359/74607335-7ceb8c80-511b-11ea-96d3-516b1b64bf4d.PNG)
+![캡처1](https://user-images.githubusercontent.com/59393359/74607335-7ceb8c80-511b-11ea-96d3-516b1b64bf4d.PNG){:.border.rounded}
 
----
+<br>
 
 html을 본인 블로그 디렉토리의 `루트폴더`에 집어넣고 깃허브 업로드 후 인증하면
 
 소유권이 자동으로 확인되었다는 창이 뜨게된다.
 
-![캡처2](https://user-images.githubusercontent.com/59393359/74607306-431a8600-511b-11ea-9071-fcd7ee8f0c83.PNG)
+![캡처2](https://user-images.githubusercontent.com/59393359/74607306-431a8600-511b-11ea-9071-fcd7ee8f0c83.PNG){:.border.rounded}
 
 <br>
 
@@ -36,11 +39,10 @@ html을 본인 블로그 디렉토리의 `루트폴더`에 집어넣고 깃허�
 
 # 2. `sitemap.xml` 생성
 
-루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣습니다.
+루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣어준다.
 
 ```xml
-{% raw %}
----
+{% raw %}---
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,16 +70,15 @@ layout: null
 
     </url>
   {% endfor %}
-</urlset>
-{% endraw %}
+</urlset>{% endraw %}
 ```
+
+<br>
 
 만약 `baseurl`을 사용하고 있다면 `loc` 태그 부분에 아래와 같이 쓰면 된다.
 
 ```xml
-{% raw %}
-<loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-{% endraw %}
+{% raw %}<loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>{% endraw %}
 ```
 
 <br>
@@ -86,7 +87,7 @@ layout: null
 
 # 3. `robots.txt` 생성
 
-루트 폴더에 `robots.txt` 파일을 생성하고 아래의 내용을 넣어줍니다.
+루트 폴더에 `robots.txt` 파일을 생성하고 아래의 내용을 넣어준다.
 
 ```
 User-agent: *
@@ -95,9 +96,9 @@ Allow: /
 Sitemap: https://syki66.github.io/blog/sitemap.xml
 ```
 
-*`sitemap.xml`은 사이트를 크롤링 하기 쉽게 만들어주고, `robot.txt`로 크롤링 허용 범위 설정 및 사이트맵을 쉽게 가져가도록 해준다.*
+<br>
 
-[robots.txt 사용법](https://support.google.com/webmasters/answer/6062596?hl=ko)
+*`sitemap.xml`은 사이트를 크롤링 하기 쉽게 만들어주고, `robot.txt`로 크롤링 허용 범위 설정 및 사이트맵을 쉽게 가져가도록 해준다. ([robots.txt 사용법](https://support.google.com/webmasters/answer/6062596?hl=ko))*
 
 <br>
 
@@ -107,13 +108,13 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 `google search console` 의 `Sitemaps` 메뉴에 들어가서 `sitemap.xml`을 제출
 
-![image](https://user-images.githubusercontent.com/59393359/74607755-c5f11000-511e-11ea-877a-6e19e9cac1ef.png)
+![image](https://user-images.githubusercontent.com/59393359/74607755-c5f11000-511e-11ea-877a-6e19e9cac1ef.png){:.border.rounded}
 
----
+<br>
 
 그러면 아래의 사진처럼 성공했다고 표시가 되며, 몇시간 안에 구글 검색으로 블로그가 노출되게 된다.
 
-![image](https://user-images.githubusercontent.com/59393359/74607783-14061380-511f-11ea-8b04-da84a428b232.png)
+![image](https://user-images.githubusercontent.com/59393359/74607783-14061380-511f-11ea-8b04-da84a428b232.png){:.border.rounded}
 
 <br>
 
@@ -121,6 +122,6 @@ Sitemap: https://syki66.github.io/blog/sitemap.xml
 
 ## 참고링크
 
-[http://dveamer.github.io/homepage/Sitemap.html](http://dveamer.github.io/homepage/Sitemap.html)
+- [http://dveamer.github.io/homepage/Sitemap.html](http://dveamer.github.io/homepage/Sitemap.html)
 
 <br><br><br><br>
