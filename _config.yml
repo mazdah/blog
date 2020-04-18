@@ -22,7 +22,7 @@ url     : "https://syki66.github.io" # the base hostname & protocol for your sit
 baseurl : "/blog" # does not include hostname
 title   : "syki blog"
 description: > # this means to ignore newlines until "Language & timezone"
-  혼자 참고하는 블로그
+  셀프 참고하는 블로그
 
 
 ## => Language and Timezone
@@ -38,7 +38,7 @@ author:
   name      : "syki66"
   url       : "https://syki66.github.io/blog"
   avatar    : "https://avatars0.githubusercontent.com/u/59393359?s=460&v=4" # path or url of avatar image (square)
-  bio       : I am an person.
+  bio       : Good
   email     : "syeonki66@gmail.com"
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name

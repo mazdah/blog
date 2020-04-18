@@ -1,14 +1,14 @@
 ---
 layout: article
-title: "지킬 TeXt 테마 세부 커스터마이징 하기"
-subtitle: "커스터마이징"
+title: "지킬 TeXt 테마 세부적인 커스터마이징"
+subtitle: ""
 date: 2020-04-17 13:50:00 +0900
 lastmod: 2020-04-18 23:20:00 +0900
 tags: 
-    - blog
-    - theme
     - customize
     - jekyll
+    - blog
+    - theme
 ---
 
 <br>

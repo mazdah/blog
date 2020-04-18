@@ -5,16 +5,15 @@ subtitle: ""
 date: 2020-04-17 13:50:00 +0900
 lastmod: 2020-04-17 13:50:00 +0900
 tags: 
-    - blog
-    - theme
     - customize
     - jekyll
-    - text
+    - blog
+    - theme
 ---
 
 <br>
 
-원래 minimal mistake theme 을 사용하려고 해서 적용했는데 막상 적용하고 나니까 디자인이 아쉬워서 세부적으로 커스터마이징 하다가 굳이 이렇게까지 해야되나 급 현타가 와서 그냥 다른 완성도 높은 테마를 찾아봤는데, 마침 TeXt 라는 테마를 찾아서 적용해보았다.
+원래 minimal mistake theme 을 사용하려고 해서 적용했는데 막상 적용하고 나니까 디자인이 아쉬워서 세부적으로 커스터마이징 하다가 보니 맘에 안드는 곳이 한둘이 아니라서 굳이 이렇게까지 해야되나 급 현타가 왔고, 결국 다른 완성도 높은 테마를 찾아봤는데, 마침 TeXt 라는 테마를 찾아서 적용해보았다.
 
 <br>
 
@@ -22,7 +21,7 @@ tags:
 
 # 1. TeXt 테마 다운로드
 
-[TeXt 공식문서](https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start)에 들어가보면 다양한 방법으로 지원하는데. clone, zip파일 다운로드 등 자신이 편리한 방법으로 하면된다. 
+[TeXt 공식문서](https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start)에 들어가보면 다양한 방법으로 지원하는데 `ruby gem`, `git clone`, `zip파일` 등 자신이 편리한 방법으로 하면된다.
 
 <br>
 
@@ -30,11 +29,13 @@ tags:
 
 # 2. 로컬 개발환경 구성
 
-docker를 사용하거나 루비와 지킬을 설치하고 아래 명령어를 입력하면 127.0.0.1:4000 로컬 구성 완료됨
+`docker` 또는 `ruby`를 사용해서 로컬 서버를 구성할 수 있으며, 아래 방법은 루비를 이용하는 방법이다. [루비를 설치](https://syki66.github.io/blog/2020/02/06/jekyll-local-server.html)하고 아래 명령어를 입력하면 `127.0.0.1:4000`의 주소에 서버가 생성된다.
 
-[지킬 로컬서버를 구성](https://syki66.github.io/blog/2020/02/06/jekyll-local-server.html)하기 위해 셋팅하고 나서 `bundle exec jekyll serve` 하면 된다.
+```
+bundle exec jekyll serve
+```
 
-로컬서버에서만 보이는 초안 작성을 하고 싶으면 `_drafts` 디렉토리 생성후 여기에 마크다운 파일을 작성해주면 된다. *(bundle exec jekyll serve --drafts)*
+로컬서버에서만 보이는 초안 작성을 하고 싶으면 `_drafts` 디렉토리 생성후 여기에 마크다운 파일을 작성해주면 된다. *(`--drafts` 옵션을 넣어주어야 보임)*
 
 <br>
 
@@ -42,7 +43,7 @@ docker를 사용하거나 루비와 지킬을 설치하고 아래 명령어를 �
 
 # 3. `_config.yml` 수정
 
-본인의 기호대로 아래 설정들을 채워주면 되지만, 만약 댓글 공급자를 disqus로 설정할 경우, 반드시 `key: anything`이라는 키워드를 넣어주어야 각 article에 표시된다.
+본인의 기호대로 아래 설정들을 채워주면 되지만, 만약 댓글 공급자를 disqus로 설정할 경우, 반드시 `key: anything`이라는 키워드를 넣어주어야만 각 포스트에서 디스커스가 활성화된다.
 
 ```yml
 text_skin: "dark" # 사이트 테마 "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
@@ -51,7 +52,7 @@ url     : "https://syki66.github.io"
 baseurl : "/blog" # baseurl이 존재하면 적기
 title   : "syki blog" # 사이트 이름
 description: > # 사이트 상세정보
-  혼자 참고하는 블로그
+  셀프 참고하는 블로그
 
 # 저자 정보를 알맞게 쓰면됨
 author:
@@ -88,21 +89,21 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: article
-      sharing: false
-      license: false
+      layout: article # 포스트의 레이아웃, article로 설정해야됨
+      sharing: false # 공유 표시
+      license: false # 라이센스 표시
       aside:
-        toc: true
+        toc: true # 사이드 메뉴 활성화
       show_edit_on_github: false
-      show_subscribe: true
-      key: anything # 반드시 이 구문을 넣어야 disqus 댓글이 각 article 마다 실행됨
-      mode: immersive 
+      show_subscribe: true # feed.xml 하단부에 띄울건지
+      key: anything # 반드시 이 구문을 넣어야 disqus 댓글이 각 post 마다 실행됨
+      mode: immersive # 백그라운드 이미지 위에 헤더와 타이틀 올리기
       header:
-        theme: dark
+        theme: dark # dark는 헤더의 배경을 어둡게 하고 글씨를 밝게함. light는 반대
       article_header:
-        type: overlay
+        type: overlay # 포스트 내부에서 헤더 오버레이 적용여부
         theme: dark
-        background_image:
+        background_image: # 포스트 헤더 배경이미지 경로 및 그라데이션 설정
           src: https://user-images.githubusercontent.com/59393359/74720914-e4b7e980-5279-11ea-9532-c262caf64f00.jpg
           gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
 ```
@@ -121,6 +122,8 @@ favicon 변경은 [RealFaviconGenerator](https://realfavicongenerator.net/)로 �
 
 ---
 
-세부적인 커스터마이징 하려면
+# 5. 세부 커스터마이징
+
+좀 더 세부적인 커스터마이징 하려면 [여기를 클릭]()
 
 <br><br><br><br>
