@@ -7,11 +7,13 @@ lastmod: 2020-02-17 15:30:00 +0900
 author_profile: false
 ---
 
+<br>
+
 jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markdown` 을 지원하여 편하게 블로그 포스팅을 할 수 있게 해준다.
 
 또한 깃허브의 호스팅 기능(github pages)을 이용하여 무료로 사용 가능하다.
 
-<br />
+<br>
 
 ---
 
@@ -19,7 +21,7 @@ jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markd
 
 깃허브에서 블로그용 새 레포지토리를 생성한다.
 
-<br />
+<br>
 
 ---
 
@@ -31,7 +33,7 @@ jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markd
     - [jekyllthemes.org](http://jekyllthemes.org/)
     - [jekyllthemes.io](https://jekyllthemes.io/)
 
-<br />
+<br>
 
 ---
 
@@ -56,7 +58,7 @@ url:                "https://syki66.github.io"
 
 이렇게 입력해주면된다. (여기서 유저네임은 소문자로 적어야됨)
 
-<br />
+<br>
 
 ---
 
@@ -66,9 +68,9 @@ url:                "https://syki66.github.io"
 
 `your site is published at ~~` 이렇게 표시가 되게 된다. 이후 옆에 링크를 누르게 되면 정상적으로 블로그 호스팅이 성공한 것을 확인할수 있다.
 
-![image](https://user-images.githubusercontent.com/59393359/74637891-3b57f180-51ae-11ea-81b6-99bc0c85a418.png)
+![image](https://user-images.githubusercontent.com/59393359/74637891-3b57f180-51ae-11ea-81b6-99bc0c85a418.png){:.border.rounded}
 
-<br />
+<br>
 
 ---
 
@@ -96,4 +98,4 @@ background: '/img/posts/01.jpg' # 포스트 배경사진
 
 포스트 작성을 완료한 후 깃허브에 업로드 하고, 얼마뒤에 퍼블리시된 url 주소로 들어가면 정상정으로 포스트가 추가된 것을 볼수있음
 
-<br />
+<br><br><br><br>

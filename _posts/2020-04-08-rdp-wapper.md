@@ -7,13 +7,15 @@ lastmod: 2020-04-08 15:50:00 +0900
 author_profile: false
 ---
 
+<br>
+
 일반적으로 윈도우 10 pro 이상에서 원격 데스크톱 모드를 지원한다. 하지만 pc당 한명의 사용자만 접속할수 있고, 다른 사용자가 접속할시 자동으로 나머지 pc에서 강제 로그아웃이 된다.
 
 따라서 컴퓨터 하나를 이용해서 사용자 여러명이서 동시에 쓰고싶을때는 간단하게 아래와 같은 방법으로 따라하면 된다.
 
 *(메인 컴퓨터는 이용하면서 동시에 다른 사용자가 여러명 원격으로 들어올수있다.)*
 
-<br />
+<br>
 
 ---
 
@@ -25,7 +27,7 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 
 [RDP Wrapper](https://github.com/stascorp/rdpwrap/releases)
 
-<br />
+<br>
 
 ---
 
@@ -33,7 +35,7 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 
 다운로드를 완료했으면 압축을 풀고 차례대로 `install.bat`, `update.bat`을 클릭하여 설치와 업데이트를 진행한다. *(안되면 관리자 권한으로 하기)*
 
-<br />
+<br>
 
 ---
 
@@ -41,9 +43,9 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 
 `RDPConf.exe`를 실행하고 버전 밑에 빨간색으로 `not supported`라고 쓰여있으면 구글에 자기 버전을 입력하고, 본인의 버전에 맞는 `rdpwrap.ini` 파일을 다운로드 받을때까지 계속 찾는다.
 
-![image](https://user-images.githubusercontent.com/59393359/78757468-8379e000-79b7-11ea-8cdb-eb749d3ee030.png)
+![image](https://user-images.githubusercontent.com/59393359/78757468-8379e000-79b7-11ea-8cdb-eb749d3ee030.png){:.border.rounded}
 
-<br />
+<br>
 
 ---
 
@@ -63,9 +65,9 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 
 완료가 되었으면 재부팅을 권장하며 `RDPConf.exe`를 들어가보면 버전 밑에 `fully supported`라고 바뀌어 있으면 이제 잘 작동된다.
 
-![image](https://user-images.githubusercontent.com/59393359/78759027-f8e6b000-79b9-11ea-8121-0e4fa068c261.png)
+![image](https://user-images.githubusercontent.com/59393359/78759027-f8e6b000-79b9-11ea-8121-0e4fa068c261.png){:.border.rounded}
 
-<br />
+<br>
 
 ---
 
@@ -75,6 +77,6 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 
 작업관리자를 키고 사용자 탭에 들어가면 접속한 유저 목록과 리소스 사용량을 확인할 수 있으며, 원치 않은 사용자가 들어왔을 경우 마우스 오른쪽 버튼을 눌러 메세지를 보내거나 강제로 연결을 끊을 수 있다.
 
-![image](https://user-images.githubusercontent.com/59393359/78761323-6cd68780-79bd-11ea-95b0-318ae7fabe45.png)
+![image](https://user-images.githubusercontent.com/59393359/78761323-6cd68780-79bd-11ea-95b0-318ae7fabe45.png){:.border.rounded}
 
-<br />
+<br><br><br><br>

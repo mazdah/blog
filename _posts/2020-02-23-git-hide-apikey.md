@@ -7,6 +7,7 @@ lastmod: 2020-02-23 18:30:00 +0900
 author_profile: false
 ---
 
+<br>
 
 # 1. 프로젝트의 루트폴더에 `.env` 파일 생성
 
@@ -16,7 +17,7 @@ author_profile: false
 REACT_APP_API_KEY=AbCdEfG
 ```
 
-<br />
+<br>
 
 ---
 
@@ -24,7 +25,7 @@ REACT_APP_API_KEY=AbCdEfG
 
 아래쪽에 `.env` 를 적어준다.
 
-<br />
+<br>
 
 ---
 
@@ -34,10 +35,10 @@ REACT_APP_API_KEY=AbCdEfG
 
 로컬서버를 다시 실행시키면 적용된 것을 볼수있다.
 
-<br />
+<br>
 
 ---
 
 - ##### 이미 올라간 파일은 무시가 안되기때문에, 이미 올렸으면 지웠다가 다시 올려야된다.
 
-<br />
+<br><br><br><br>

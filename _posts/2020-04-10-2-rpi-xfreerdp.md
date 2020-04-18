@@ -8,6 +8,8 @@ tags:
     - xfree
 ---
 
+<br>
+
 관련포스트 : 
 
 라즈베리파이에서 윈도우10 pc로 연결하는 방법은 rdesktop과 xfreerdp를 이용하면 되는디 이중에 xfreerdp가 지원을 많이 해주는것으로 보여서 xfreerdp를 설치했다.
@@ -37,3 +39,5 @@ xfreerdp 호스트ip
 ```
 xfreerdp -f /v:211.22.211.22 /u:syki /p:123456
 ```
+
+<br><br><br><br>
