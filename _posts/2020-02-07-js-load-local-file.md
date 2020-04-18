@@ -1,18 +1,24 @@
 ---
 layout: article
-title: "바닐라 자바스크립트를 이용하여 로컬 파일 불러오기"
-subtitle: "with html, javascript"
+title: "자바스크립트를 이용하여 로컬 파일 불러오기"
+subtitle: "with html, vanilla javascript"
 date: 2020-02-07 14:30:00 +0900
 lastmod: 2020-02-07 14:30:00 +0900
+tags: 
+    - javascript
+    - html
+    - FileReader
 ---
 
 <br>
 
-일반적으로 `html`과 `javascript`에서 로컬에 있는 파일을 불러와서 작업을 하고 싶을때 `cors`라는 정책 때문에 직접 불러올 수가 없어서
+일반적으로 `html`과 `javascript`에서 로컬에 있는 파일을 코드로 직접 불러와서 작업을 하고 싶을때 `cors`라는 정책 때문에 직접 불러올 수가 없어서
 
 만약 로컬파일을 코드 상에서 직접 작업하고 싶다면 node.js 등을 활용해서 로컬 서버를 구성한 후 불러와야 된다.
 
-![cors error](https://user-images.githubusercontent.com/59393359/74086007-3c0fca00-4ac2-11ea-8c28-6b7d7a390dbe.PNG)
+![cors error](https://user-images.githubusercontent.com/59393359/74086007-3c0fca00-4ac2-11ea-8c28-6b7d7a390dbe.PNG){:.border.rounded}
+
+<br>
 
 ---
 
@@ -116,6 +122,6 @@ function parseText(text) {
 
 ## 참고 링크
 
-[mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)
+- [mdn javascript FileReader](https://developer.mozilla.org/ko/docs/Web/API/FileReader)
 
 <br><br><br><br>

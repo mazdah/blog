@@ -1,15 +1,21 @@
 ---
 layout: article
-title: "깃허브 지킬(jekyll) 블로그 로컬 서버 구성하기"
-subtitle: "with Ruby"
+title: "지킬 블로그 로컬 서버 구성하기"
+subtitle: "with ruby"
 date: 2020-02-06 11:30:00 +0900
 lastmod: 2020-04-18 01:30:00 +0900
-
+tags: 
+    - jekyll
+    - blog
+    - local server
+    - ruby
 ---
+
+<br>
 
 이미 테마를 적용한 상태에서 깃허브에 계속 퍼블리시 하면서 업데이트 확인하기 번거로울때 사용하면 된다.
 
-<br/>
+<br>
 
 ---
 
@@ -19,7 +25,7 @@ lastmod: 2020-04-18 01:30:00 +0900
 
 ![루비 다운로드](https://user-images.githubusercontent.com/59393359/74086021-5649a800-4ac2-11ea-916a-0fa9b518936b.PNG){:.border.rounded}
 
-<br/>
+<br>
 
 ---
 
@@ -27,7 +33,7 @@ lastmod: 2020-04-18 01:30:00 +0900
 
 ![cmd 실행](https://user-images.githubusercontent.com/59393359/74086033-695c7800-4ac2-11ea-8ab1-94c303a84d8f.PNG){:.border.rounded}
 
-<br/>
+<br>
 
 ---
 
@@ -39,7 +45,7 @@ lastmod: 2020-04-18 01:30:00 +0900
 cd C:\Users\syki\Desktop\test
 ```
 
-<br/>
+<br>
 
 ---
 
@@ -51,7 +57,7 @@ bundler 패키지를 설치한다.
 gem install bundler
 ```
 
-<br/>
+<br>
 
 ---
 
@@ -65,4 +71,4 @@ bundle exec jekyll serve
 
 `--drafts` 옵션을 넣어주면 `/_drafts`에 있는 초안 파일들도 로컬에서만 보일 수 있게 해준다.
 
-<br/><br/><br/><br/>
+<br><br><br><br>

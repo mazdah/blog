@@ -1,17 +1,17 @@
 ---
 layout: article
-title: "Hello World!!"
+title: "Hello World"
 subtitle: "^__^"
 date: 2020-02-05 16:30:00 +0900
-lastmod: 2020-02-05 16:30:00 +0900
+lastmod: 2020-04-18 01:30:00 +0900
 tags: 
     - hello world
 ---
 
-# Hello World
----
+<br>
 
-## **파이썬**
+# 1. 파이썬
+
 ```python
 print("Hello World!!")
 ```
@@ -20,7 +20,8 @@ print("Hello World!!")
 
 ***
 
-## **자바스크립트**
+# 2. 자바스크립트
+
 ~~~javascript
 console.log("Hello World!!");
 ~~~
@@ -29,7 +30,8 @@ console.log("Hello World!!");
 
 ***
 
-## **C**
+# 3. C
+
 ```c
 printf("Hello World!!");
 ```
@@ -38,7 +40,8 @@ printf("Hello World!!");
 
 ***
 
-## **자바**
+# 4. 자바
+
 ```java
 System.out.println("Hello World!!");
 ```
