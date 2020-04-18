@@ -222,7 +222,6 @@ defaults:
         type: overlay
         theme: dark
         background_image:
-          src: https://user-images.githubusercontent.com/59393359/74720914-e4b7e980-5279-11ea-9532-c262caf64f00.jpg
           gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
       
 

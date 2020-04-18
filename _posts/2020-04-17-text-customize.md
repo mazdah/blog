@@ -10,18 +10,9 @@ tags:
     - customize
     - jekyll
     - text
-mode: immersive
-header:
-  theme: dark
-article_header:
-  type: overlay
-  theme: dark
-  background_image:
-    src: https://user-images.githubusercontent.com/59393359/74718667-0adb8a80-5276-11ea-8bc3-0e36c67cf28a.jpg
-    gradient: 'linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .0))'
 ---
 
-# 1. 홈페이지 하단의 Powered by 글귀 제거
+# 1. 하단의 Powered by 글귀 제거
 
 아래 디렉토리로 들어가 아래코드를 삭제한다.
 
@@ -96,5 +87,54 @@ code {
 ```
 
 # 헤더 이미지 높이 변경
+
+> _layouts/page.html
+
+`height:100vh` 추가하면 딱 화면 높이만큼 이미지 크기가 늘어나게됨
+
+```html
+{% raw %}
+<div class="hero hero--dark overlay" style="{{ _header_style }} height:100vh;">
+{% endraw %}
+```
+
+# 각 포스트 페이지 헤더 오버레이
+
+> _sass/components/_header.scss
+
+`background`에서 오버레이 색을 변경할 수 있음
+
+```scss
+.header--dark {
+  @extend .text--dark;
+  background: rgba(#202020, .15);
+  .navigation__item--active {
+    &::after {
+      @include split-line(bottom, 4px, $text-color-theme-dark);
+    }
+  }
+}
+```
+
+# 랜덤 배경화면
+
+> _includes/scripts/customJS/randomBgImg.js 추가
+
+코드 참고 : 
+
+`height:100vh` 추가해줬던 코드에다가 random_BG 속성을 추가해준다.
+
+```html
+<div class="hero hero--dark overlay random_BG" style="{{ _header_style }} height:100vh;">
+```
+
+```html
+{% raw %}
+  <script>{%- include scripts/customJS/randomBgImg.js -%}</script>
+{% endraw %}
+```
+
+배경화면을 따로 지정해주지 않는다면 랜덤한 배경화면이 들어가게 되낟.
+
 # 코드블럭 자동줄바꿈 적용하기
 # 본문 중앙정렬
