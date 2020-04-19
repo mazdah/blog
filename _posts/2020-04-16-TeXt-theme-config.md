@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "지킬 TeXt 테마 초기 설정하기"
+title: "TeXt theme 지킬 블로그 초기 설정하기"
 subtitle: ""
-date: 2020-04-17 13:50:00 +0900
-lastmod: 2020-04-17 13:50:00 +0900
+date: 2020-04-16 13:50:00 +0900
+lastmod: 2020-04-16 13:50:00 +0900
 tags: 
     - customize
     - jekyll
@@ -35,6 +35,8 @@ tags:
 bundle exec jekyll serve
 ```
 
+<br>
+
 로컬서버에서만 보이는 초안 작성을 하고 싶으면 `_drafts` 디렉토리 생성후 여기에 마크다운 파일을 작성해주면 된다. *(`--drafts` 옵션을 넣어주어야 보임)*
 
 <br>
@@ -43,7 +45,7 @@ bundle exec jekyll serve
 
 # 3. `_config.yml` 수정
 
-본인의 기호대로 아래 설정들을 채워주면 되지만, 만약 댓글 공급자를 disqus로 설정할 경우, 반드시 `key: anything`이라는 키워드를 넣어주어야만 각 포스트에서 디스커스가 활성화된다.
+본인의 기호대로 아래 설정들을 채워주면 되지만, 만약 댓글 공급자를 disqus로 설정할 경우, 반드시 `key: anything`을 넣어주어야만 각 포스트에서 디스커스가 활성화된다.
 
 ```yml
 text_skin: "dark" # 사이트 테마 "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
@@ -75,7 +77,7 @@ excerpt_separator: \n\n
 toc:
   selectors: "h1,h2"
 
-paginate: 8 # 한 페이지에 보여줄 article 개수
+paginate: 8 # 한 페이지에 보여줄 post 개수
 
 comments:
   provider: "disqus" # 댓글 공급자 선택하기, "disqus", "gitalk", "valine", "custom"
@@ -83,13 +85,13 @@ comments:
   disqus:
     shortname: "syki66"
 
-# 기본 article 레이아웃 설정 (자신의 기호에 맞게 넣으면됨)
+# post 레이아웃 기본값 설정 (자신의 기호에 맞게 넣으면됨)
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: article # 포스트의 레이아웃, article로 설정해야됨
+      layout: article # post의 레이아웃, article로 설정해야됨
       sharing: false # 공유 표시
       license: false # 라이센스 표시
       aside:
@@ -114,7 +116,7 @@ defaults:
 
 # 4. 로고 및 favicon 변경하기
 
-favicon 변경은 [RealFaviconGenerator](https://realfavicongenerator.net/)로 들어가서 favicon 및 기타 파일들을 다운로드 받고, `/assets` 에다가 덮어씌우고 `favicon.ico` 파일은 루트폴더에도 추가하면되며
+favicon 변경은 [RealFaviconGenerator](https://realfavicongenerator.net/)로 들어가서 favicon 및 기타 파일들을 다운로드 받고, 받은 파일들을 `/assets` 에다가 덮어씌우고 `favicon.ico` 파일은 루트폴더에 추가해준다.
 
 로고 변경은 `/assets/safari-pinned-tab.svg`의 svg 태그를 복사해서 `assets/images/logo/logo.svg`에 붙여넣으면 된다.
 

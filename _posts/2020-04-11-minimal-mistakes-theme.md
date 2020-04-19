@@ -1,27 +1,28 @@
 ---
 layout: article
 title: "minimal mistake theme 지킬 블로그 초기 설정하기"
+subtitle: ""
 date: 2020-04-11 20:50:00 +0900
 lastmod: 2020-04-12 11:50:00 +0900
 tags: 
-    - test
+    - jekyll
+    - blog
     - theme
 ---
 
-
-
+<br>
 
 clean-blog 테마가 질리기도 하고 수동으로 바꾸어야 되는 설정들이 꽤 많고 귀찮아서, 가장 인기있고 커스터마이징 및 기타 관리가 쉬운 minimal-mistakes 테마로 바꾸게 되었다.
 
-<br/>
+<br>
 
 ---
 
 # 1. 테마 가져오기
 
-깃허브의 `Fork`를 이용하거나, 깃의 `clone`를 이용하거나, 또는 정식 릴리즈가 된 압축파일을 다운로드 받는다.
+깃허브의 `Fork`를 이용하거나, git의 `clone`를 이용하거나, 또는 정식 릴리즈가 된 압축파일을 다운로드 받는다.
 
-<br />
+<br>
 
 ---
 
@@ -106,19 +107,27 @@ defaults:
       author_profile: true
 ```
 
-<br/>
+<br>
 
 ---
 
 # 3. `_pages` 디렉토리 생성
 
-상단 네비게이션을 사용하기 위해서 루트 디렉토리에 `_pages` 디렉토리를 생성하고, `docs/_pages/` 경로로 들어가서 `404.md` `category-archive.md` `tag-archive.md` `year-archive.md` 파일을 루트폴더의 `_pages`로 가져온다.
+상단 네비게이션을 사용하기 위해서 루트 디렉토리에 `_pages` 디렉토리를 생성하고, `docs/_pages/` 경로로 들어가서 하단 목록의 파일들을 루트폴더의 `_pages`로 가져온다.
 
-<br/>
+> docs/_pages/404.md 
+
+> docs/_pages/category-archive.md
+
+> docs/_pages/tag-archive.md
+
+> docs/_pages/year-archive.md
+
+<br>
 
 ---
 
-# 4. `navigation.yml` 수정
+# 4. 상단 네비게이션 메뉴 항목 추가
 
 `_date` 디렉토리의 `navigation.yml`을 아래와 같이 수정한다.
 
@@ -134,7 +143,7 @@ main:
     url: /year-archive/
 ```
 
-<br/>
+<br>
 
 ---
 
@@ -162,7 +171,7 @@ main:
 
 - screenshot.png
 
-<br/>
+<br>
 
 ---
 
@@ -199,18 +208,4 @@ toc_icon: "bars" # 아이콘 설정
 toc_sticky: true # 마우스 스크롤과 함께 내려갈 것인지 설정
 ```
 
-<br/>
-
----
-
-# 7. 로컬서버 구성
-
-링크
-
-`Gemfile
-
-```
-source "https://rubygems.org"
-
-gem "minimal-mistakes-jekyll"
-```
+<br><br><br><br>

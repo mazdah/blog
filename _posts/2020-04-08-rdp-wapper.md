@@ -1,10 +1,12 @@
 ---
 layout: article
 title: "윈도우 10에서 사용자 다중접속하여 컴퓨터 성능 나누어 쓰기"
-subtitle: "RDP Wrapper, 다중접속 원격데스크톱, windows 10 pro"
+subtitle: "using RDP Wrapper"
 date: 2020-04-08 15:50:00 +0900
 lastmod: 2020-04-08 15:50:00 +0900
-author_profile: false
+tags: 
+    - rdp
+    - windows
 ---
 
 <br>
@@ -13,7 +15,7 @@ author_profile: false
 
 따라서 컴퓨터 하나를 이용해서 사용자 여러명이서 동시에 쓰고싶을때는 간단하게 아래와 같은 방법으로 따라하면 된다.
 
-*(메인 컴퓨터는 이용하면서 동시에 다른 사용자가 여러명 원격으로 들어올수있다.)*
+*(메인 컴퓨터는 계속 이용하면서 동시에 다른 사용자가 여러명 원격으로 들어올수있다.)*
 
 <br>
 
@@ -21,11 +23,7 @@ author_profile: false
 
 # 1. RDP Wrapper 다운로드
 
-아래 링크로 들어가서 RDP Wrapper를 설치한다.
-
-zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문에 `세이프 브라우징` 기능을 설정에서 꺼주고 다운로드 받아야한다.
-
-[RDP Wrapper](https://github.com/stascorp/rdpwrap/releases)
+먼저 [RDP Wrapper](https://github.com/stascorp/rdpwrap/releases)를 설치하는데, zip파일을 권장하며 크롬에서는 악성파일로 인식하기 때문에 `세이프 브라우징` 기능을 설정에서 꺼주고 다운로드 받아야한다.
 
 <br>
 
@@ -41,7 +39,7 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 
 # 3. `RDPConf.exe` 실행
 
-`RDPConf.exe`를 실행하고 버전 밑에 빨간색으로 `not supported`라고 쓰여있으면 구글에 자기 버전을 입력하고, 본인의 버전에 맞는 `rdpwrap.ini` 파일을 다운로드 받을때까지 계속 찾는다.
+`RDPConf.exe`를 실행하고 버전 밑에 빨간색으로 `not supported`라고 쓰여있으면 구글에 자기 버전을 입력하고, 본인의 버전에 맞는 `rdpwrap.ini` 파일을 다운로드 받는다.
 
 ![image](https://user-images.githubusercontent.com/59393359/78757468-8379e000-79b7-11ea-8cdb-eb749d3ee030.png){:.border.rounded}
 
@@ -54,14 +52,18 @@ zip파일을 권장하며, 크롬에서는 악성파일로 인식하기 때문�
 **CMD를 관리자 권한으로 실행** 후 아래 명령어를 입력한다. (Y/N 선택창이 나오면 무조건 Yes)
 
 ```
-> net stop termservice
+net stop termservice
 ```
+
+<br>
 
 이후 `C:\Program Files\RDP Wrapper`로 들어가서 다운로드 받은 `rdpwrap.ini` 파일로 교체하고 아래 CMD에 아래 명령어를 입력한다.
 
 ```
-> net start termservice
+net start termservice
 ```
+
+<br>
 
 완료가 되었으면 재부팅을 권장하며 `RDPConf.exe`를 들어가보면 버전 밑에 `fully supported`라고 바뀌어 있으면 이제 잘 작동된다.
 

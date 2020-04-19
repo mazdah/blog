@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "지킬 TeXt 테마 세부적인 커스터마이징"
+title: "TeXt theme 지킬 블로그 세부적인 커스터마이징"
 subtitle: ""
 date: 2020-04-17 13:50:00 +0900
 lastmod: 2020-04-18 23:20:00 +0900
@@ -27,7 +27,7 @@ tags:
 
 ---
 
-# 2. 본문 헤더의 발췌 제거 후 부제목 띄우기
+# 2. 본문 헤더의 발췌문 제거 후 부제목 띄우기
 
 `_layouts/page.html`로 들어가서 두 줄 변경
 
@@ -100,9 +100,11 @@ pre code {
 
 [Page - Article Header Overlay Background Image](https://tianqi.name/jekyll-TeXt-theme/page/article-header-overlay-background-image-immersive-translucent-header.html)와 같이 타이틀을 이미지 위에 띄우게 설정했을 경우, 창 하단부분까지 이미지가 확대되있지 않는데, 창의 높이만큼 이미지를 확대하고 싶다면 아래와 같이 하면된다.
 
-> _layouts/page.html
+<br>
 
-아래 코드를 찾아서 스타일 속성에 `height:100vh`을 추가해주면 딱 화면 높이만큼 이미지 크기가 늘어나게 된다.
+아래 경로로 들어가서 하단의 코드를 찾고, 스타일 속성에 `height:100vh`을 추가해주면 딱 화면 높이만큼 이미지 크기가 맞춰진다.
+
+> _layouts/page.html
 
 ```html
 {% raw %}<div class="hero hero--dark overlay" style="{{ _header_style }} height:100vh;">{% endraw %}
@@ -114,7 +116,7 @@ pre code {
 
 # 6. 헤더 네비게이션 색 변경
 
-[Page - Article Header Overlay Background Image](https://tianqi.name/jekyll-TeXt-theme/page/article-header-overlay-background-image-immersive-translucent-header.html)에서 보이는 것처럼 기본적으로 투명한 검정색이 적용되어 있지만 아래에서 `rgba`값을 수정하면 색과 투명도를 변경할 수 있다.
+[Page - Article Header Overlay Background Image](https://tianqi.name/jekyll-TeXt-theme/page/article-header-overlay-background-image-immersive-translucent-header.html)에서 보이는 것처럼 기본적으로 투명한 검정색 오버레이가 적용되어 있지만 아래에서 `rgba`값을 수정하면 색과 투명도를 변경할 수 있다.
 
 > _sass/components/_header.scss
 
@@ -134,7 +136,7 @@ pre code {
 
 ---
 
-# 7. 랜덤 배경화면
+# 7. 랜덤 배경화면 설정하기
 
 [코드](https://syki66.github.io/blog/2020/02/18/random-header-background.html)를 복사해서 아래 경로에 디렉토리와 파일을 하나 추가해준다.
 
@@ -152,7 +154,7 @@ pre code {
 
 <br>
 
-이후 `page.html` 하단부에 아래 코드를 추가해주면 방문할때마다 배경화면 이미지가 변경되게 된다.
+이후 `page.html` 하단부에 아래 코드를 추가해주면 방문할때마다 배경화면 이미지가 랜덤으로 바뀌게 된다.
 
 ```html
 {% raw %}<script>{%- include scripts/customJS/randomBgImg.js -%}</script>{% endraw %}

@@ -1,10 +1,13 @@
 ---
 layout: article
-title: "무료 깃허브 블로그, 지킬을 이용하여 시작하기"
-subtitle: "github pages, blog with jekyll"
+title: "지킬 블로그 시작하기"
+subtitle: "using github pages"
 date: 2020-02-17 15:30:00 +0900
 lastmod: 2020-02-17 15:30:00 +0900
-author_profile: false
+tags: 
+    - jekyll
+    - blog
+    - github pages
 ---
 
 <br>
@@ -29,7 +32,7 @@ jekyll 은 ruby 로 제작되어진 정적 웹사이트 개발 툴이며, `markd
 
 나는 [jasper](https://jekyller.github.io/jasper/)와 [clean blog](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/) 중에서 고민하다가 조금 더 깔끔한 clean blog 테마를 선택하게 되었다.
 
-- #### 지킬테마 검색 사이트
+- #### 지킬 테마 검색 사이트
     - [jekyllthemes.org](http://jekyllthemes.org/)
     - [jekyllthemes.io](https://jekyllthemes.io/)
 
@@ -50,13 +53,11 @@ baseurl:            "/SyKi_blog"
 url:                "https://syki66.github.io"
 ```
 
-- ### 여기서 `baseurl`과 `url`은 반드시 수정해주어야함.
+#### 여기서 `baseurl`과 `url`은 반드시 수정해주어야함. *(유저네임은 소문자로 적어야됨)*
 
 `url` -> `"https://깃허브유저네임.github.io"`
 
 `baseurl` -> `"/디렉토리명"`
-
-이렇게 입력해주면된다. (여기서 유저네임은 소문자로 적어야됨)
 
 <br>
 
@@ -64,7 +65,7 @@ url:                "https://syki66.github.io"
 
 # 4. 웹사이트 무료 호스팅
 
-생성된 레포지토리의 `Settings` -> `GitHub Pages` -> `Source`에서 `master branch`를 체크
+생성된 레포지토리의 `Settings` -> `GitHub Pages` -> `Source`에서 `master branch`를 체크하면
 
 `your site is published at ~~` 이렇게 표시가 되게 된다. 이후 옆에 링크를 누르게 되면 정상적으로 블로그 호스팅이 성공한 것을 확인할수 있다.
 
@@ -78,13 +79,15 @@ url:                "https://syki66.github.io"
 
 포스트 생성은 `_posts` 폴더에서 `markdown` 파일을 만들어서 블로그를 작성하면 되며 이름은 아래와 같은 규칙으로 하면된다.
 
-`YYYY-MM-DD-title.md`
+> YYYY-MM-DD-title.md
 
 ```
-> 2020-02-17-how-to-start-jekyll-blog.md
+2020-02-17-how-to-start-jekyll-blog.md
 ```
 
-markdown 파일 상단에 아래의 `yml`코드를 추가하고 알맞게 수정한 뒤, 밑에 `markdown` 문법을 이용하여 포스트를 작성하면됨 - ([markdown 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601))
+<br>
+
+이후 markdown 파일 상단에 아래의 `yml`코드를 추가하고 알맞게 수정한 뒤, 밑에 [markdown 문법](https://www.markdownguide.org/basic-syntax/)을 이용하여 포스트를 작성하면됨
 
 ```yml
 ---
@@ -95,7 +98,5 @@ date: 2020-02-05 16:30:00 +0900 # +0900은 서울 표준시
 background: '/img/posts/01.jpg' # 포스트 배경사진
 ---
 ```
-
-포스트 작성을 완료한 후 깃허브에 업로드 하고, 얼마뒤에 퍼블리시된 url 주소로 들어가면 정상정으로 포스트가 추가된 것을 볼수있음
 
 <br><br><br><br>
