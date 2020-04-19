@@ -6,6 +6,6 @@
 
 feed.xml 활용법
 
-svg 변경
-
 articles에서 몇몇 excerpt 안보임
+
+포스트 헤더 태그랑 검색창 검정배경 투명도 높이기

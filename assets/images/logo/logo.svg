@@ -1,10 +1,47 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="420px" height="420px" viewBox="0 0 420 420" enable-background="new 0 0 420 420" xml:space="preserve">  <image id="image0" width="420" height="420" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkAgMAAAADIrmmAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEXw8PCohNX///8une6h
-AAAAAWJLR0QCZgt8ZAAAAAd0SU1FB+QEEw4yMtkUhX4AAACxSURBVHja7c3BDQAQEEVBitCXi/5b
-ceciYiVi3nn3T0qSJEmSJF0rt7EatEIikUgkEolEIpFIJBKJRCKRSCQSiUQikUg3pTORSCQSiUQi
-kUgkEolEIpFIJBKJRCKRSCTSv9L0VEgkEolEIpFIJBKJRCKRSCQSiUQikUgkEumUtNOKVGNOSCQS
-iUQikUgkEolEIpFIJBKJRCKRSCQSKVCSJEmSJEmSJEmSJEmSJEmSHqwDanSmilw+0xEAAAAldEVY
-dGRhdGU6Y3JlYXRlADIwMjAtMDQtMTlUMTQ6NTA6NTArMDM6MDDJnSilAAAAJXRFWHRkYXRlOm1v
-ZGlmeQAyMDIwLTA0LTE5VDE0OjUwOjUwKzAzOjAwuMCQGQAAAABJRU5ErkJggg==" />
+<!--절대값 비율 맞춰주는 옵션들-->
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="420.000000pt" height="420.000000pt" viewBox="0 0 420.000000 420.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<!--배경-->
+<path style="fill:rgba(0,0,0,0.3); stroke:none;" d="M0 0L0 420L420 420L420 0L0 0z"/>
+
+<!--메인-->
+<path style="fill:rgba(168,132,213,0.7); stroke:none;" d="
+M35 35
+L35 316
+L106 316
+L106 246
+L176 246
+L176 176
+L246 176
+L246 246
+L315 246
+L315 316
+L386 316
+L386 35
+L315 35
+L315 105
+L106 105
+L106 35
+L35 35z
+"/>
+
+<!--살짝 사각형 크기 늘려서 위에꺼랑 서로 살짝 겹치게-->
+<path style="fill:rgba(168,132,213,0.7); stroke:none;" d="
+M175 245
+L175 315
+L247 315
+L247 245
+L175 245z
+"/>
+
+<!--크기 그냥 딱 맞춘거-->
+<!--path style="fill:#a884d5; stroke:none;" d="
+M176 246
+L176 315
+L246 315
+L246 246
+L176 246z"/-->
+
 </svg>
