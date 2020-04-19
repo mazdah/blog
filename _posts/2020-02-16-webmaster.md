@@ -41,37 +41,36 @@ html을 본인 블로그 디렉토리의 `루트폴더`에 집어넣고 깃허�
 
 루트 디렉토리에 `sitemap.xml` 파일을 생성하고 아래의 내용을 넣어준다.
 
-```xml
-{% raw %}---
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+<span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;urlset</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xsi:schemaLocation=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"</span> <span class="na">xmlns=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9"</span><span class="nt">&gt;</span>
+  &#123;&#37; for post in site.posts &#37;&#125;
+    <span class="nt">&lt;url&gt;</span>
+      <span class="nt">&lt;loc&gt;</span>{{ site.url }}{{ post.url }}<span class="nt">&lt;/loc&gt;</span>
+      &#123;&#37; if post.lastmod == null &#37;&#125;
+        <span class="nt">&lt;lastmod&gt;</span>{{ post.date | date_to_xmlschema }}<span class="nt">&lt;/lastmod&gt;</span>
+      &#123;&#37; else &#37;&#125;
+        <span class="nt">&lt;lastmod&gt;</span>{{ post.lastmod | date_to_xmlschema }}<span class="nt">&lt;/lastmod&gt;</span>
+      &#123;&#37; endif &#37;&#125;
 
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
+      &#123;&#37; if post.sitemap.changefreq == null &#37;&#125;
+        <span class="nt">&lt;changefreq&gt;</span>weekly<span class="nt">&lt;/changefreq&gt;</span>
+      &#123;&#37; else &#37;&#125;
+        <span class="nt">&lt;changefreq&gt;</span>{{ post.sitemap.changefreq }}<span class="nt">&lt;/changefreq&gt;</span>
+      &#123;&#37; endif &#37;&#125;
 
-      {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+      &#123;&#37; if post.sitemap.priority == null &#37;&#125;
+          <span class="nt">&lt;priority&gt;</span>0.5<span class="nt">&lt;/priority&gt;</span>
+      &#123;&#37; else &#37;&#125;
+        <span class="nt">&lt;priority&gt;</span>{{ post.sitemap.priority }}<span class="nt">&lt;/priority&gt;</span>
+      &#123;&#37; endif &#37;&#125;
 
-    </url>
-  {% endfor %}
-</urlset>{% endraw %}
-```
+    <span class="nt">&lt;/url&gt;</span>
+  &#123;&#37; endfor &#37;&#125;
+<span class="nt">&lt;/urlset&gt;</span>
+</code></pre></div></div>
 
 <br>
 
