@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "구글에서 지킬 블로그가 검색되도록 설정하기"
-subtitle: "Google Search Console 이용"
+subtitle: "using Google Search Console"
 date: 2020-02-16 14:30:00 +0900
 lastmod: 2020-04-08 15:00:00 +0900
 tags: 

@@ -1,9 +1,9 @@
 ---
 layout: article
 title: "라즈베리파이 해상도 2560x1080으로 설정하기"
-subtitle: "ultra wide monitor resolution setting"
-date: 2020-04-09 11:50:00 +0900
-lastmod: 2020-04-09 11:50:00 +0900
+subtitle: "ultra wide monitor's rpi resolution setting"
+date: 2020-04-10 11:50:00 +0900
+lastmod: 2020-04-10 11:50:00 +0900
 tags: 
     - raspberry pi
     - resolution

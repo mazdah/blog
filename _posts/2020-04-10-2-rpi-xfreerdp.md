@@ -2,8 +2,8 @@
 layout: article
 title: "라즈베리파이에서 윈도우10으로 원격 데스크톱 연결하기"
 subtitle: "using xfreeRDP"
-date: 2020-04-09 16:50:00 +0900
-lastmod: 2020-04-09 16:50:00 +0900
+date: 2020-04-10 16:50:00 +0900
+lastmod: 2020-04-10 16:50:00 +0900
 tags: 
     - rdp
     - raspberry pi

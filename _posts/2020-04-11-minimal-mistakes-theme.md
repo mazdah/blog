@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "minimal mistake theme 지킬 블로그 초기 설정하기"
-subtitle: ""
+title: "minimal mistakes theme 지킬 블로그 초기 설정하기"
+subtitle: "basic config of minimal-mistakes-theme"
 date: 2020-04-11 20:50:00 +0900
 lastmod: 2020-04-12 11:50:00 +0900
 tags: 

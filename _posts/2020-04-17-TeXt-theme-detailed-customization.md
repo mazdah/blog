@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "TeXt theme 지킬 블로그 세부적인 커스터마이징"
-subtitle: ""
+subtitle: "customizing jekyll-TeXt-theme"
 date: 2020-04-17 13:50:00 +0900
 lastmod: 2020-04-18 23:20:00 +0900
 tags: 

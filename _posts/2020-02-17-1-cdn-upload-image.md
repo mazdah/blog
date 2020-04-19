@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "깃허브 서버에 사진 업로드하기"
-subtitle: "github issue 이용"
+subtitle: "using github issue comment"
 date: 2020-02-17 01:30:00 +0900
 lastmod: 2020-02-17 01:30:00 +0900
 tags: 

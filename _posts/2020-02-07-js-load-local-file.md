@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "자바스크립트를 이용하여 로컬 파일 불러오기"
-subtitle: "with html, vanilla javascript"
+subtitle: "using html, vanilla javascript"
 date: 2020-02-07 14:30:00 +0900
 lastmod: 2020-02-07 14:30:00 +0900
 tags: 

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "TeXt theme 지킬 블로그 초기 설정하기"
-subtitle: ""
+subtitle: "basic config of jekyll-TeXt-theme"
 date: 2020-04-16 13:50:00 +0900
 lastmod: 2020-04-16 13:50:00 +0900
 tags: 
