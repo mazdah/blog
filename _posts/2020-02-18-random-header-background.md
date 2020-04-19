@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "지킬 블로그 배경화면 랜덤하게 변경하기"
-subtitle: "using template language"
+subtitle: "using liquid template language"
 date: 2020-02-18 16:30:00 +0900
 lastmod: 2020-02-18 16:30:00 +0900
 tags: 
@@ -14,7 +14,7 @@ tags:
 
 <br>
 
-지킬을 이용하여 블로그 포스트 작성할때, 매번 배경화면을 뭘로 설정할까 고민하기가 귀찮아져서 포스트의 배경화면이 랜덤으로 뜰수 있게 블로그를 커스터마이징 해보았다. <a href="#무료-배경화면-사이트">(무료 배경화면 사이트)</a>
+clean blog 테마를 사용하면서 지킬 블로그 포스트를 작성할때, 매번 배경화면을 뭘로 설정할까 고민하기가 귀찮아져서 포스트의 배경화면이 랜덤으로 뜰수 있게 블로그를 커스터마이징 해보았다. <a href="#무료-배경화면-사이트">(무료 배경화면 사이트)</a>
 
 <br>
 
@@ -26,14 +26,13 @@ tags:
 
 > `_layouts/post.html`
 
-```html
-{% raw %}{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-   {% else %}
-   <header class="masthead random_BG">
-   <script src="{{'/assets/customJS/randomBgImg.js' | relative_url }}"></script>
-    {% endif %}{% endraw %}
-```
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&#123;&#37; if page.background &#37;&#125;
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"masthead"</span> <span class="na">style=</span><span class="s">"background-image: url('/blog')"</span><span class="nt">&gt;</span>
+   &#123;&#37; else &#37;&#125;
+   <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"masthead random_BG"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/blog/assets/customJS/randomBgImg.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+</code></pre></div></div>
 
 <br>
 
