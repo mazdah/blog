@@ -118,7 +118,11 @@ defaults:
 
 favicon 변경은 [RealFaviconGenerator](https://realfavicongenerator.net/)로 들어가서 favicon 및 기타 파일들을 다운로드 받고, 받은 파일들을 `/assets` 에다가 덮어씌우고 `favicon.ico` 파일은 루트폴더에 추가해준다.
 
-로고 변경은 `/assets/safari-pinned-tab.svg`의 svg 태그를 복사해서 `assets/images/logo/logo.svg`에 붙여넣으면 된다.
+로고 변경은 `/assets/safari-pinned-tab.svg`의 svg 태그를 복사해서 아래 파일에 덮어 씌우면 된다.
+
+> assets/images/logo/logo.svg
+
+> _includes/svg/logo.svg
 
 <br>
 
