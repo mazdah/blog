@@ -154,10 +154,11 @@ pre code {
 
 <br>
 
-이후 `page.html` 하단부에 아래 코드를 추가해주면 방문할때마다 배경화면 이미지가 랜덤으로 바뀌게 된다.
+이후 코드 바로 아래부분에 하단의 코드를 추가해주면 방문할때마다 배경화면 이미지가 랜덤으로 바뀌게 된다.
 
 ```html
-{% raw %}<script>{%- include scripts/customJS/randomBgImg.js -%}</script>{% endraw %}
+{% raw %}<div class="hero hero--dark overlay random_BG" style="{{ _header_style }} height:100vh;">
+<script>{%- include scripts/customJS/randomBgImg.js -%}</script>{% endraw %}
 ```
 
 <br>

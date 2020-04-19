@@ -7,3 +7,5 @@
 feed.xml 활용법
 
 svg 변경
+
+articles에서 몇몇 excerpt 안보임
