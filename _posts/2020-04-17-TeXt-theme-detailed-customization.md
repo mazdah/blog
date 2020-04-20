@@ -165,6 +165,32 @@ pre code {
 
 ---
 
-# `코드블럭` 자동줄바꿈 적용하기
+# 8. 스크롤바 커스터마이징
+
+사이트의 세로 스크롤바, 코드블록의 가로 스크롤바가 테마에 비해 투박하게 기본값으로 설정되어있는데 이를 바꾸려면 아래 경로로 들어가서 하단의 코드를 추가 후 알맞게 수정해주면 된다.
+
+> _sass/common/_reset.scss
+
+```scss
+::-webkit-scrollbar{
+  width: 6px; // 세로 스크롤의 너비
+  height: 3px; // 가로 스크롤의 너비
+  background-color: #121212; // 스크롤의 기본 배경색상
+  
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 3px; // 스크롤바 곡률
+  background-color: #ff006a; // 스크롤바 색상
+}
+
+::-webkit-scrollbar-track:horizontal{
+  background-color: #000000; // 가로 스크롤바 색상
+}
+```
+
+<br>
+
+---
+
 # 본문 중앙정렬
 # 후크 걸기
