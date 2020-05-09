@@ -62,17 +62,23 @@ git rebase --interactive 896fd2887bda7eb9533b3bf5144b321aceea5e5c
 git status
 ```
 
+<br>
+
 `git add`를 사용한 다음
 
 ```
 git add .
 ```
 
+<br>
+
 `git commit --amend` 를 입력하여 날짜 또는 커밋메세지 등을 수정한다. 변경할 사항이 없으면 그냥 나오면 된다. *(--no-edit 옵션을 사용하게 되면 커밋 메세지를 수정하지 않고 진행하게 된다.)*
 
 ```
 git commit --amend --no-edit
 ```
+
+<br>
 
 이후 `git rebase --continue`를 입력하게되면 수정한 커밋부터 현재의 커밋까지 내용과 해시값이 전부 바뀌게 된다.
 
@@ -98,13 +104,13 @@ git push origin +master
 
 # 7. `GIT_COMMITER_DATE` 수정하기
 
-rebase를 끝마치고 깃허브에서 커밋 히스토리를 조회하게 되면, 아래 사진과 같이 커밋 날짜별로 분류가 되는게 아니라 당일 날짜로 분류가 되게 된다.
+`rebase`를 끝마치고 깃허브에서 커밋 히스토리를 조회하게 되면, 아래 사진과 같이 커밋 날짜별로 분류가 되는게 아니라 당일 날짜로 분류가 되게 된다.
 
 ![image](https://user-images.githubusercontent.com/59393359/81479134-825cfc80-925c-11ea-9bd1-2a5b73ef88ee.png){:.border.rounded}
 
 <br>
 
-이때 아래 코드를 git bash에 입력하고 다시 푸시하면, GIT_AUTHOR_DATE 기준으로 GIT_COMMITER_DATE가 수정되게 된다.
+이때 아래 코드를 git bash에 입력하고 다시 푸시하면, `GIT_AUTHOR_DATE` 기준으로 `GIT_COMMITER_DATE`가 수정되게 된다.
 
 ```
 git filter-branch -f --env-filter \

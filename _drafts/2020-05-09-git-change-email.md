@@ -5,7 +5,7 @@ subtitle: ""
 date: 2020-05-09 00:01:50 +0900
 lastmod: 2020-05-09 00:01:50 +0900
 tags: 
-    - tag1
+    - git
 ---
 
 
@@ -13,9 +13,9 @@ tags:
 
 ```
 git filter-branch --env-filter '
-WRONG_EMAIL="old@gmail.com"
-NEW_NAME="syki66"
-NEW_EMAIL="new@gmail.com"
+WRONG_EMAIL="변경전 이메일"
+NEW_NAME="유저네임"
+NEW_EMAIL="변경후 이메일"
 
 if [ "$GIT_COMMITTER_EMAIL" = "$WRONG_EMAIL" ]
 then
