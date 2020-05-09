@@ -1,9 +1,9 @@
 ---
 layout: article
 title: "깃, 과거 커밋했던 내용 수정하기"
-subtitle: "amend past commit using git"
+subtitle: "+rebase로 인한 committer date 변경하기"
 date: 2020-05-01 23:20:00 +0900
-lastmod: 2020-05-01 23:20:00 +0900
+lastmod: 2020-05-010 03:00:00 +0900
 tags: 
     - git
     - git rebase
@@ -40,13 +40,15 @@ git rebase --interactive 896fd2887bda7eb9533b3bf5144b321aceea5e5c
 
 이후 vi 에디터가 실행되게 되는데, 가장 최상단줄의 pick을 edit로 바꾸고 :wq를 입력해서 저장하고 빠져나온다.
 
+![image](https://user-images.githubusercontent.com/59393359/81479254-234bb780-925d-11ea-84ca-7bb64850e1f3.png){:.border.rounded}
+
 <br>
 
 ---
 
 # 4. 변경하고 싶은 파일 수정
 
-디렉토리에 들어가서 잘못 커밋한 내용들을 바로잡는다.
+작업 디렉토리에 들어가서 잘못 커밋한 내용들을 바로잡는다.
 
 <br>
 
@@ -66,10 +68,10 @@ git status
 git add .
 ```
 
-`git commit --amend` 를 입력하여 날짜 또는 커밋메세지 등을 수정한다. 변경할 사항이 없으면 그냥 나오면 된다.
+`git commit --amend` 를 입력하여 날짜 또는 커밋메세지 등을 수정한다. 변경할 사항이 없으면 그냥 나오면 된다. *(--no-edit 옵션을 사용하게 되면 커밋 메세지를 수정하지 않고 진행하게 된다.)*
 
 ```
-git commit --amend
+git commit --amend --no-edit
 ```
 
 이후 `git rebase --continue`를 입력하게되면 수정한 커밋부터 현재의 커밋까지 내용과 해시값이 전부 바뀌게 된다.
@@ -89,5 +91,29 @@ git rebase --continue
 ```
 git push origin +master
 ```
+
+<br>
+
+---
+
+# 7. `GIT_COMMITER_DATE` 수정하기
+
+rebase를 끝마치고 깃허브에서 커밋 히스토리를 조회하게 되면, 아래 사진과 같이 커밋 날짜별로 분류가 되는게 아니라 당일 날짜로 분류가 되게 된다.
+
+![image](https://user-images.githubusercontent.com/59393359/81479134-825cfc80-925c-11ea-9bd1-2a5b73ef88ee.png){:.border.rounded}
+
+<br>
+
+이때 아래 코드를 git bash에 입력하고 다시 푸시하면, GIT_AUTHOR_DATE 기준으로 GIT_COMMITER_DATE가 수정되게 된다.
+
+```
+git filter-branch -f --env-filter \
+    'if [ "$GIT_AUTHOR_DATE" != "$GIT_COMMITTER_DATE" ]
+     then
+         export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
+     fi'
+```
+
+![image](https://user-images.githubusercontent.com/59393359/81481274-c9052380-9269-11ea-828c-c15f4951dfa6.png){:.border.rounded}
 
 <br><br><br><br>
