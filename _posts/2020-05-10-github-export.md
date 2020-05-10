@@ -1,13 +1,15 @@
 ---
 layout: article
 title: "깃허브 export 이후, 작업파일 복구 및 원격저장소 연결하기"
-subtitle: "how to use "github-export.tar.gz""
+subtitle: "how to use github-export.tar.gz"
 date: 2020-05-10 00:30:00 +0900
 lastmod: 2020-05-10 00:30:00 +0900
 tags: 
     - github
     - export
 ---
+
+<br>
 
 # 1. 깃허브 export 압축풀기
 
