@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "깃, 과거 커밋했던 내용 수정하기"
+title: "git, 과거 커밋했던 내용 수정하기"
 subtitle: "+rebase로 인한 committer date 변경하기"
 date: 2020-05-01 23:20:00 +0900
 lastmod: 2020-05-010 03:00:00 +0900
@@ -106,13 +106,13 @@ git push origin +master
 
 # 7. `GIT_COMMITER_DATE` 수정하기
 
-`rebase`를 끝마치고 깃허브에서 커밋 히스토리를 조회하게 되면, 아래 사진과 같이 커밋 날짜별로 분류가 되는게 아니라 당일 날짜로 분류가 되게 된다.
+`rebase`를 끝마치고 깃허브에서 커밋 히스토리를 조회하게 되면, 아래 사진과 같이 커밋 날짜별로 분류가 되는게 아니라 당일 날짜로 분류가 되게 된다. *(뿐만 아니라 과거 시점에 커밋을 하는 것도 마찬가지로 COMMITER_DATE는 현재가 된다.)*
 
 ![image](https://user-images.githubusercontent.com/59393359/81479134-825cfc80-925c-11ea-9bd1-2a5b73ef88ee.png){:.border.rounded}
 
 <br>
 
-이때 아래 코드를 git bash에 입력하고 다시 푸시하면, `GIT_AUTHOR_DATE` 기준으로 `GIT_COMMITER_DATE`가 수정되게 된다.
+이때 아래 코드를 git bash에 입력하고 다시 푸시하면, `GIT_AUTHOR_DATE` 기준으로 `GIT_COMMITER_DATE`가 수정되게 된다. *(주의: 커밋해시가 전부 변경되게됨)*
 
 ```
 git filter-branch -f --env-filter \
