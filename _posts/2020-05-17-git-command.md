@@ -20,6 +20,7 @@ git status # 현재 디렉토리 변화점 추적
 git add # 커밋 전 파일 추가
 git commit -m "커밋메세지" # 커밋 및 메세지 넣기
 git push origin master # 로컬저장소에서 원격저장소로 보내기
+git push origin 브런치이름 # 브런치를 푸시
 git pull origin master # 원격저장소에서 로컬저장소로 가져오기
 git remote add origin 레포지토리주소 # 원격저장소 주소 추가
 git remote remove origin 레포지토리주소 # 원격저장소 주소 삭제
@@ -62,7 +63,7 @@ git checkout 커밋해시
 또는 브런치를 열람할 수도 있다.
 
 ```
-git checkout "브런치이름"
+git checkout 브런치이름
 ```
 
 <br>
@@ -99,18 +100,18 @@ git reset --hard 커밋해시
 
 # 4. 하위 디렉토리 또는 파일에서 특정 문자열 찾기
 
-문자열도 가능하며
+문자열 또는 정규표현식을 넣어서 찾을 수 있다.
 
 ```
-git grep 찾을문자열
+git grep 정규표현식
 ```
 
 <br>
 
-정규표현식도 가능하다.
+또한 아래 명령어를 이용하게 되면 과거 커밋에 있는 내용까지도 삳삳히 조회할 수 있다.
 
 ```
-git grep 정규표현식
+git grep 정규표현식 $(git rev-list --all)
 ```
 
 <br>

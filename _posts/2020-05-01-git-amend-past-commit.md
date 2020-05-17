@@ -3,7 +3,7 @@ layout: article
 title: "git, 과거 커밋했던 내용 수정하기"
 subtitle: "+rebase로 인한 committer date 변경하기"
 date: 2020-05-01 23:20:00 +0900
-lastmod: 2020-05-010 03:00:00 +0900
+lastmod: 2020-05-18 02:00:00 +0900
 tags: 
     - git
     - git rebase
@@ -82,7 +82,7 @@ git commit --amend --no-edit
 
 <br>
 
-이후 `git rebase --continue`를 입력하게되면 수정한 커밋부터 현재의 커밋까지 내용과 해시값이 전부 바뀌게 된다.
+이후 `git rebase --continue`를 입력하게되면 수정한 커밋부터 현재의 커밋까지 수정된 내용이 적용된다. *(커밋해시값 전부 바뀜)*
 
 ```
 git rebase --continue
