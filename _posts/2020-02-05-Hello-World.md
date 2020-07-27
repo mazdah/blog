@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Hello World"
-subtitle: "start syki blog"
+subtitle: "start ^__^"
 date: 2020-02-05 16:30:00 +0900
 lastmod: 2020-04-18 01:30:00 +0900
 tags: 
