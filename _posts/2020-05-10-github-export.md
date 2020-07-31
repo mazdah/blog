@@ -3,13 +3,21 @@ layout: article
 title: "깃허브 export 이후, 작업파일 복구 및 원격저장소 연결하기"
 subtitle: "how to use 'github-export.tar.gz'"
 date: 2020-05-10 00:30:00 +0900
-lastmod: 2020-05-10 00:30:00 +0900
+lastmod: 2020-07-31 23:30:00 +0900
 tags: 
     - github
     - export
 ---
 
 <br>
+
+[github](github.com)에서는 백업 또는 마이그레이션 목적으로, 계정의 모든 작업했던 디렉토리들을 하나의 압축파일로 다운로드 받을 수 있도록 제공 해준다.
+
+이후 다른 계정에 특정 디렉토리를 원격 저장소로 연결하고 싶을때 `git`을 이용하여, 아래와 같은 방법을 사용하면 된다.
+
+<br>
+
+---
 
 # 1. 깃허브 export 압축풀기
 

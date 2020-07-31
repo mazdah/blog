@@ -3,13 +3,19 @@ layout: article
 title: "최애 깃 명령어"
 subtitle: "all time git command favorites"
 date: 2020-05-17 03:00:00 +0900
-lastmod: 2020-05-17 03:00:00 +0900
+lastmod: 2020-07-31 23:30:00 +0900
 tags: 
     - git
     - git command
 ---
 
 <br>
+
+`git`을 쓰면서 나중에 일부 명령어를 잊어버렸을 때, 이 포스트를 다시 보면서 쓸 수 있도록 유용하다고 생각했던 명령어들을 적어보았다.
+
+<br>
+
+---
 
 # 0. 기본적인 명령어
 
