@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "깃, 커밋 이메일 변경하기"
+title: "git, 커밋 이메일 및 이름 변경하기"
 subtitle: "change git commit email"
 date: 2020-05-11 00:18:20 +0900
-lastmod: 2020-05-11 00:18:20 +0900
+lastmod: 2020-09-02 20:30:00 +0900
 tags: 
     - git
     - email
@@ -21,22 +21,37 @@ tags:
 
 bash를 실행하고서 아래 코드를 입력해준다.
 
+이때 둘 중 하나만 바꾸고 싶다면, 바꾸고 싶은 곳의 변수의 문자열만 입력해주고 나머지는 그대로 두면 된다.
+
 ```
 git filter-branch --env-filter '
+
 WRONG_EMAIL="변경전 이메일"
-NEW_NAME="유저네임"
 NEW_EMAIL="변경후 이메일"
+
+WRONG_NAME="변경전 유저네임"
+NEW_NAME="변경후 유저네임"
 
 if [ "$GIT_COMMITTER_EMAIL" = "$WRONG_EMAIL" ]
 then
-    export GIT_COMMITTER_NAME="$NEW_NAME"
     export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
 fi
+
 if [ "$GIT_AUTHOR_EMAIL" = "$WRONG_EMAIL" ]
 then
-    export GIT_AUTHOR_NAME="$NEW_NAME"
     export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
 fi
+
+if [ "$GIT_COMMITTER_NAME" = "$WRONG_NAME" ]
+then
+    export GIT_COMMITTER_NAME="$NEW_NAME"
+fi
+
+if [ "$GIT_AUTHOR_NAME" = "$WRONG_NAME" ]
+then
+    export GIT_AUTHOR_NAME="$NEW_NAME"
+fi
+
 ' --tag-name-filter cat -- --branches --tags
 ```
 

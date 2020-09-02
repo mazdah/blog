@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "최애 깃 명령어"
+title: "최애 git 명령어"
 subtitle: "all time git command favorites"
 date: 2020-05-17 03:00:00 +0900
-lastmod: 2020-07-31 23:30:00 +0900
+lastmod: 2020-09-02 20:30:00 +0900
 tags: 
     - git
     - git command
@@ -177,26 +177,39 @@ git filter-branch --env-filter \
 
 ---
 
-# 7. 이메일 변경하기
+# 7. 이메일 및 이름 변경하기
 
-아래 명령어를 형식에 맞게 넣어주면 새 이메일로 변경된다. *(참고: [깃, 커밋 이메일 변경하기](https://syki66.github.io/blog/2020/05/10/git-change-email.html))*
+아래 명령어를 형식에 맞게 넣어주면 새 이름과 새 이메일로 변경된다. *(참고: [깃, 커밋 이메일 변경하기](https://syki66.github.io/blog/2020/05/10/git-change-email.html))*
 
 ```
 git filter-branch --env-filter '
+
 WRONG_EMAIL="변경전 이메일"
-NEW_NAME="유저네임"
 NEW_EMAIL="변경후 이메일"
+
+WRONG_NAME="변경전 유저네임"
+NEW_NAME="변경후 유저네임"
 
 if [ "$GIT_COMMITTER_EMAIL" = "$WRONG_EMAIL" ]
 then
-    export GIT_COMMITTER_NAME="$NEW_NAME"
     export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
 fi
+
 if [ "$GIT_AUTHOR_EMAIL" = "$WRONG_EMAIL" ]
 then
-    export GIT_AUTHOR_NAME="$NEW_NAME"
     export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
 fi
+
+if [ "$GIT_COMMITTER_NAME" = "$WRONG_NAME" ]
+then
+    export GIT_COMMITTER_NAME="$NEW_NAME"
+fi
+
+if [ "$GIT_AUTHOR_NAME" = "$WRONG_NAME" ]
+then
+    export GIT_AUTHOR_NAME="$NEW_NAME"
+fi
+
 ' --tag-name-filter cat -- --branches --tags
 ```
 
