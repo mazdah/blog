@@ -83,7 +83,7 @@ expo fetch:android:keystore
 
 <br>
 
-추후에 expo 서버에서 `keystore`를 `삭제`하고 싶으면 아래 명령어를 입력하면 된다.
+추후에 expo 서버에서 `keystore`를 `삭제`하고 싶으면 아래 명령어를 입력하여 빌드를 진행하면 된다.
 
 ```
 expo build:android --clear-credentials
