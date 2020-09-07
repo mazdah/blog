@@ -59,6 +59,8 @@ git remote remove 프로젝트1
 
 <br>
 
+---
+
 ## 참고링크
 
 - [https://medium.com/altcampus/how-to-merge-two-or-multiple-git-repositories-into-one-9f8a5209913f](https://medium.com/altcampus/how-to-merge-two-or-multiple-git-repositories-into-one-9f8a5209913f)
