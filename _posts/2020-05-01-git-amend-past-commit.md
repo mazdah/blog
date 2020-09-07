@@ -40,7 +40,7 @@ git rebase --interactive 896fd2887bda7eb9533b3bf5144b321aceea5e5c
 
 # 3. `pick` => `edit` 수정
 
-이후 vi 에디터가 실행되게 되는데, 가장 최상단줄의 pick을 edit로 바꾸고 :wq를 입력해서 저장하고 빠져나온다.
+이후 vi 에디터가 실행되게 되는데, 가장 최상단줄의 pick을 edit로 바꾸고 `esc` -> `:wq`를 입력해서 저장하고 빠져나온다.
 
 ![image](https://user-images.githubusercontent.com/59393359/81479254-234bb780-925d-11ea-84ca-7bb64850e1f3.png){:.border.rounded}
 
