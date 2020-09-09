@@ -3,7 +3,7 @@ layout: article
 title: "HDMI 없이 라즈베리파이에 원격 연결하기"
 subtitle: "raspberry pi control without HDMI"
 date: 2020-08-31 01:00:00 +0900
-lastmod: 2020-08-31 01:00:00 +0900
+lastmod: 2020-09-09 21:00:00 +0900
 tags: 
     - raspberry pi
     - wifi
@@ -55,7 +55,7 @@ network={
 
 <br>
 
-이후 `Host Name`에 `raspberrypi`를 입력해주고 `Open`을 클릭하게 되면 연결이 진행된다.
+이후 `Host Name`에 `raspberrypi`를 입력해주고 `Open`을 클릭하게 되면 `SSH`로 접속이 된다.
 
 ![image](https://user-images.githubusercontent.com/59393359/91664075-b1f38580-eb27-11ea-8778-d589afe9fbcf.png){:.border.rounded}
 
@@ -64,5 +64,23 @@ network={
 초기 사용자 이름은 `pi`이며, 비밀번호는 `raspberry`를 입력해주면 정상적으로 로그인이 되게된다.
 
 ![image](https://user-images.githubusercontent.com/59393359/91664165-583f8b00-eb28-11ea-8f52-dda1cb918fb0.png){:.border.rounded}
+
+<br>
+
+---
+
+# 4. GUI로 접속하기
+
+먼저 아래 명령어를 입력하여 `xrdp`를 설치한다.
+
+```
+sudo apt-get install xrdp
+```
+
+<br>
+
+이후 윈도우에서 `원격 데스크톱 연결`을 실행한 뒤 `raspberrypi` 또는 `ip주소`를 입력하고서 연결을 누르면 GUI환경으로 접속할수 있다.
+
+![image](https://user-images.githubusercontent.com/48711215/92594402-ab120300-f2dd-11ea-9518-f02cea2a059f.png){:.border.rounded}
 
 <br><br><br><br>

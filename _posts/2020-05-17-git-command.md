@@ -3,7 +3,7 @@ layout: article
 title: "최애 git 명령어"
 subtitle: "all time git command favorites"
 date: 2020-05-17 03:00:00 +0900
-lastmod: 2020-09-02 20:30:00 +0900
+lastmod: 2020-09-09 16:30:00 +0900
 tags: 
     - git
     - git command
@@ -27,7 +27,7 @@ git add # 커밋 전 파일 추가
 git commit -m "커밋메세지" # 커밋 및 메세지 넣기
 git push origin master # 로컬저장소에서 원격저장소로 보내기
 git push origin 브런치이름 # 브런치를 푸시
-git pull origin master # 원격저장소에서 로컬저장소로 가져오기
+git pull origin master # 원격저장소에서 로컬저장소로 변경사항 가져오기
 git remote add origin 레포지토리주소 # 원격저장소 주소 추가
 git remote remove origin 레포지토리주소 # 원격저장소 주소 삭제
 git diff # 변경된 부분 보기
@@ -124,7 +124,27 @@ git grep 정규표현식 $(git rev-list --all)
 
 ---
 
-# 5. 과거 시점에 커밋하기
+# 5. 커밋 기록 보기
+
+과거에 커밋을 했던 기록들을 보고 싶다면 아래 명령어를 입력하면 된다.
+
+```
+git log
+```
+
+<br>
+
+만약 특정 파일이 변경되었던 커밋들만 보고 싶다면 아래 명령어를 입력하면 된다.
+
+```
+git log --follow ./파일의경로 # 특정파일이 변경되었을때의 커밋들 표시
+```
+
+<br>
+
+---
+
+# 6. 과거 시점에 커밋하기
 
 과거의 시점으로 커밋을 하고 싶을때에는 아래와 같이 명령어를 입력해주면 된다.
 
@@ -148,7 +168,7 @@ git commit -m "커밋메세지" --date=2020-03-26T15:30:00+0900
 
 ---
 
-# 6. GIT_COMMITTER_DATE 수정하기
+# 7. GIT_COMMITTER_DATE 수정하기
 
 아래의 명령어를 입력하게 되면 모든 committer date가 author date와 똑같아진다. *(참고: [깃, 과거 커밋했던 내용 수정하기](https://syki66.github.io/blog/2020/05/01/git-amend-past-commit.html))*
 
@@ -177,7 +197,7 @@ git filter-branch --env-filter \
 
 ---
 
-# 7. 이메일 및 이름 변경하기
+# 8. 이메일 및 이름 변경하기
 
 아래 명령어를 형식에 맞게 넣어주면 새 이름과 새 이메일로 변경된다. *(참고: [깃, 커밋 이메일 변경하기](https://syki66.github.io/blog/2020/05/10/git-change-email.html))*
 

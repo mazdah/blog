@@ -3,7 +3,7 @@ layout: article
 title: "라즈베리파이에 라즈비안 설치하기"
 subtitle: "using Raspberry Pi Imager"
 date: 2020-04-09 11:50:00 +0900
-lastmod: 2020-04-09 11:50:00 +0900
+lastmod: 2020-09-09 21:00:00 +0900
 tags: 
     - raspberry pi
     - raspbian
@@ -37,5 +37,17 @@ tags:
 # 3. 라즈비안 부팅
 
 굽기가 완료되면 sd카드를 라즈베리파이에 삽입하고서 초반에 설정하는 창에서 거의 기본값으로 해주면 되는데 `여기서 wifi 지역 설정을 미국`으로 해야 `wifi 신호`가 잡히게 된다.
+
+<br>
+
+---
+
+# 4. 업데이트 실행
+
+아래 명령어를 입력하여 업데이트 및 업그레이드를 진행하게 되면 초기 설정이 끝나게 된다.
+
+```
+sudo apt-get update && sudo apt-get upgrade
+```
 
 <br><br><br><br>
