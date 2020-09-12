@@ -47,7 +47,7 @@ git pull 기존프로젝트경로 생성했던브랜치이름
 하위디렉토리 복사가 정상적으로 완료되었다면, `원격 저장소에 연결` 후 `push` 해준다.
 
 ```
-git remote origin add 원격저장소주소
+git remote add origin 원격저장소주소
 git push origin master
 ```
 
