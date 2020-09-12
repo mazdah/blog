@@ -21,7 +21,7 @@ tags:
 
 ```
 git init # git 생성
-git clone 레포지토리주소 # 원격저장소 복사하기
+git clone 레포지토리주소 # 원격저장소 등 복사하기
 git status # 현재 디렉토리 변화점 추적
 git add # 커밋 전 파일 추가
 git commit -m "커밋메세지" # 커밋 및 메세지 넣기
@@ -31,6 +31,7 @@ git pull origin master # 원격저장소에서 로컬저장소로 변경사항 �
 git remote add origin 레포지토리주소 # 원격저장소 주소 추가
 git remote remove origin 레포지토리주소 # 원격저장소 주소 삭제
 git diff # 변경된 부분 보기
+git branch # 브런치 목록 표시
 history # 깃 명령어는 아니지만, 최근에 실행했던 명령어 한눈에 볼수 있음
 ```
 
