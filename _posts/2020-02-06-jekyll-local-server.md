@@ -3,7 +3,7 @@ layout: article
 title: "지킬 블로그 로컬 서버 구성하기"
 subtitle: "using ruby"
 date: 2020-02-06 11:30:00 +0900
-lastmod: 2020-04-18 01:30:00 +0900
+lastmod: 2020-09-13 19:30:00 +0900
 tags: 
     - jekyll
     - blog
@@ -58,6 +58,12 @@ gem install bundler
 ```
 
 <br>
+
+이후 아래 명령어를 입력한다.
+
+```
+bundle install
+```
 
 ---
 
