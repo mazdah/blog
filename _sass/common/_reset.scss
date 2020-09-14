@@ -192,3 +192,34 @@ input {
 ::-webkit-scrollbar-track:horizontal{
   background-color: #000000;
 }
+
+// 툴팁 관련 설정
+tooltip {
+  position: relative;
+  color: #ff006a;
+}
+
+tooltip text {
+  /* 툴팁 속성 */
+  visibility: hidden;
+  background-color: black;
+  color: #eaeaea;
+  opacity: 0;
+
+  line-height: map-get($base, line-height-sm);
+  border-radius: map-get($base, border-radius);
+  padding: map-get($spacers, 3);
+  
+  /* 툴팁 위치 */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  
+  /* 툴팁 효과 */
+  transition: opacity 0.1s;
+}
+
+tooltip:hover text {
+  visibility: visible;
+  opacity: 1;
+}

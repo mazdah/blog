@@ -81,7 +81,7 @@ $text-background-color: #000; // 인라인(inline) 코드의 배경색 변경
 ```scss
 code {
   font-size: map-get($base, font-size-xs); // 이 라인 삭제하면 인라인 코드에서 마크다운의 헤더 크기가 정상적으로 적용됨
-  line-height: map-get($base, line-height-sm);
+  line-height: map-get($base, line-height-sm); // 높이 설정
   font-weight: map-get($base, font-weight-bold); // 인라인, 블록 코드의 폰트 굵기 변경 가능
   color: #ff006a; // 인라인 코드의 폰트 색상 변경
 }
