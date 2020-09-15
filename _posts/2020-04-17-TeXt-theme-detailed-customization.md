@@ -3,7 +3,7 @@ layout: article
 title: "TeXt theme 지킬 블로그 세부적인 커스터마이징"
 subtitle: "customizing jekyll-TeXt-theme"
 date: 2020-04-17 13:50:00 +0900
-lastmod: 2020-04-18 23:20:00 +0900
+lastmod: 2020-09-15 17:00:00 +0900
 tags: 
     - customize
     - jekyll
@@ -192,5 +192,116 @@ pre code {
 
 ---
 
+# 9. 툴팁 효과 만들기
+
+텍스트에 `hover`시 말풍선이 뜨게 하고 싶다면, 아래 경로들에 각 코드를 생성 또는 추가해주면 된다.
+
+<br>
+
+> _includes/scripts/customJS/tooltip.js
+
+```js
+document.querySelectorAll("tooltip").forEach(e => {
+    e.style.color = (e.childNodes.length > 1) ? "#ff006a" : "rgba(255,255,255, 0.7)";
+})
+
+function giveTooltipWidth() {
+    let innerWidth = document.querySelector(".tooltip").offsetWidth;
+    let tooltip = document.querySelector(".tooltip");
+    let style = getComputedStyle(tooltip);
+    let marginLeft = parseInt(style.marginLeft);
+    let width = innerWidth + marginLeft;
+        
+    document.querySelectorAll("tooltip").forEach((e, i) => {
+        let text = e.querySelector("text");
+        if (text != null){
+            text.style.width = `${width / 2}px`;
+            text.style.left = `${(width / 2) - marginLeft}px`;
+            text.style.transform = `translateY(-${tooltip.childNodes[1].offsetHeight * i}px)`;
+        }
+    })
+}
+giveTooltipWidth();
+setInterval(giveTooltipWidth, 1000);
+```
+
+<br>
+
+`page.html` 하단부에 아래 코드 추가
+
+> _layouts/page.html
+
+```html
+{% raw %}<script>{%- include scripts/customJS/tooltip.js -%}</script>{% endraw %}
+```
+
+<br>
+
+> _sass/common/_reset.scss
+
+```scss
+// 툴팁 관련 설정
+tooltip {
+  position: relative;
+  color: #ff006a;
+}
+
+tooltip text {
+  /* 툴팁 속성 */
+  visibility: hidden;
+  background-color: black;
+  color: #eaeaea;
+  opacity: 0;
+
+  line-height: map-get($base, line-height-sm);
+  border-radius: map-get($base, border-radius);
+  padding: map-get($spacers, 3);
+  
+  /* 툴팁 위치 */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  
+  /* 툴팁 효과 */
+  transition: opacity 0.1s;
+}
+
+tooltip:hover text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 툴팁에 이미지 사용할때 */
+.tooltipImage{
+  margin-top: map-get($spacers, 3);
+  border: 1px solid $border-color-l;
+  border-radius: map-get($base, border-radius);
+}
+```
+
+<br>
+
+이제 본문에서 아래 형식으로 글을 작성하게 되면 툴팁 효과가 적용되게 된다.
+
+```html
+<ul class="tooltip">
+  <li><tooltip>설명
+    <text>여기에 상세 설명을 적으면 말풍선 효과가 적용됨</text>
+  </tooltip></li>
+
+  <li><tooltip>그림
+    <text>여기에 상세설명을 적고, 아래에 이미지를 추가해주면 이미지와 같이 말풍선에 들어가게됨
+        <img class="tooltipImage" src="주소 입력" />
+    </text>
+  </tooltip></li>
+</ul>
+```
+
+<br>
+
+---
+
 # 본문 중앙정렬
 # 후크 걸기
+
+<br><br><br><br>
