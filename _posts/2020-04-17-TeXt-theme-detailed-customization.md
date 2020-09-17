@@ -205,24 +205,30 @@ document.querySelectorAll("tooltip").forEach(e => {
     e.style.color = (e.childNodes.length > 1) ? "#ff006a" : "rgba(255,255,255, 0.7)";
 })
 
-function giveTooltipWidth() {
+function setTooltip() {
     let innerWidth = document.querySelector(".tooltip").offsetWidth;
     let tooltip = document.querySelector(".tooltip");
     let style = getComputedStyle(tooltip);
     let marginLeft = parseInt(style.marginLeft);
     let width = innerWidth + marginLeft;
-        
-    document.querySelectorAll("tooltip").forEach((e, i) => {
-        let text = e.querySelector("text");
-        if (text != null){
-            text.style.width = `${width / 2}px`;
-            text.style.left = `${(width / 2) - marginLeft}px`;
-            text.style.transform = `translateY(-${tooltip.childNodes[1].offsetHeight * i}px)`;
-        }
+    
+    document.querySelectorAll(".tooltip").forEach((element) => {
+        element.querySelectorAll("tooltip").forEach((e, i) => {
+            let text = e.querySelector("text");
+            if (text != null){
+                text.style.width = `${width / 2}px`;
+                text.style.left = `${(width / 2) - marginLeft}px`;
+                text.style.transform = `translateY(-${tooltip.childNodes[1].offsetHeight * i}px)`;
+            }
+        })
     })
+};
+
+setTooltip();
+
+window.onresize = function () {
+    setTooltip();
 }
-giveTooltipWidth();
-setInterval(giveTooltipWidth, 1000);
 ```
 
 <br>
@@ -271,11 +277,12 @@ tooltip:hover text {
   opacity: 1;
 }
 
-/* 툴팁에 이미지 사용할때 */
-.tooltipImage{
+// 툴팁에 들어가는 이미지 설정
+tooltip img{
   margin-top: map-get($spacers, 3);
   border: 1px solid $border-color-l;
   border-radius: map-get($base, border-radius);
+  width: 100%;
 }
 ```
 
@@ -291,7 +298,7 @@ tooltip:hover text {
 
   <li><tooltip>그림
     <text>여기에 상세설명을 적고, 아래에 이미지를 추가해주면 이미지와 같이 말풍선에 들어가게됨
-        <img class="tooltipImage" src="주소 입력" />
+        <img src="주소 입력" />
     </text>
   </tooltip></li>
 </ul>

@@ -224,8 +224,10 @@ tooltip:hover text {
   opacity: 1;
 }
 
-.tooltipImage{
+// 툴팁에 들어가는 이미지 설정
+tooltip img{
   margin-top: map-get($spacers, 3);
   border: 1px solid $border-color-l;
   border-radius: map-get($base, border-radius);
+  width: 100%;
 }
