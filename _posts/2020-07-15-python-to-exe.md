@@ -3,7 +3,7 @@ layout: article
 title: "파이썬 파일을 exe로 변환시키기"
 subtitle: "'.py' to '.exe'"
 date: 2020-07-15 00:30:00 +0900
-lastmod: 2020-07-15 00:30:00 +0900
+lastmod: 2020-11-01 18:40:00 +0900
 tags: 
     - python
     - convert
@@ -38,8 +38,10 @@ pip install pyinstaller
 
 `cmd`에서 변환시킬 파이썬 파일이 있는 디렉토리로 이동한 후, 아래 명령어를 입력해준다.
 
+*(이때 `--noconsole` 옵션을 사용하면 exe 파일 실행시 콘솔창이 뜨지 않게 된다.)*
+
 ```
-pyinstaller --onefile 변환시킬_파이썬_파일.py
+pyinstaller --noconsole --onefile --icon 파일아이콘.png 변환시킬_파이썬_파일.py
 ```
 
 <br>
