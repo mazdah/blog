@@ -41,7 +41,7 @@ pip install pyinstaller
 *(이때 `--noconsole` 옵션을 사용하면 exe 파일 실행시 콘솔창이 뜨지 않게 된다.)*
 
 ```
-pyinstaller --noconsole --onefile --icon 파일아이콘.png 변환시킬_파이썬_파일.py
+pyinstaller --noconsole --onefile --icon 파일아이콘.ico 변환시킬_파이썬_파일.py
 ```
 
 <br>
