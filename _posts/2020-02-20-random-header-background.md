@@ -2,8 +2,8 @@
 layout: article
 title: "지킬 블로그 배경화면 랜덤하게 변경하기"
 subtitle: "using liquid template language"
-date: 2020-02-18 16:30:00 +0900
-lastmod: 2020-02-18 16:30:00 +0900
+date: 2020-02-20 16:30:00 +0900
+lastmod: 2020-02-20 16:30:00 +0900
 tags: 
     - random background
     - template language

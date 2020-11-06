@@ -2,8 +2,8 @@
 layout: article
 title: "지킬 블로그에 디스커스 추가하기"
 subtitle: "add blog comments"
-date: 2020-02-17 13:30:00 +0900
-lastmod: 2020-02-17 13:30:00 +0900
+date: 2020-02-18 13:30:00 +0900
+lastmod: 2020-02-18 13:30:00 +0900
 tags: 
     - disqus
     - blog

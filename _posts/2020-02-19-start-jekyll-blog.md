@@ -2,8 +2,8 @@
 layout: article
 title: "지킬 블로그 시작하기"
 subtitle: "using github pages"
-date: 2020-02-17 15:30:00 +0900
-lastmod: 2020-02-17 15:30:00 +0900
+date: 2020-02-19 15:30:00 +0900
+lastmod: 2020-02-19 15:30:00 +0900
 tags: 
     - jekyll
     - blog
