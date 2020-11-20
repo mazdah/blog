@@ -3,7 +3,7 @@ layout: article
 title: "git, 두개의 레포지토리 변경 이력까지 병합하기"
 subtitle: "git merge repos"
 date: 2020-09-07 17:00:00 +0900
-lastmod: 2020-09-07 17:00:00 +0900
+lastmod: 2020-11-20 22:30:00 +0900
 tags: 
     - git
     - merge
@@ -17,12 +17,12 @@ tags:
 
 ---
 
-# 1. 레포지토리 주소 연결
+# 1. 레포지토리 주소 `연결` 및 `fetch`
 
-`프로젝트2`에서 아래 명령어를 입력하여, 가져올 `프로젝트1`의 깃 주소를 연결해준다.
+`프로젝트2`에서 아래 명령어를 입력하여, 가져올 `프로젝트1`의 깃 주소를 연결해주며, 동시에 `fetch`를 진행한다.
 
 ```
-git remote add -f 프로젝트1 https://github.com/syki66/프로젝트1.git
+git remote add --fetch 프로젝트1 https://github.com/syki66/프로젝트1.git
 ```
 
 <br>
