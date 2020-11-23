@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "git, 과거 커밋했던 내용 수정하기"
+title: "[git rebase] 과거 커밋했던 내용 수정하기"
 subtitle: "+rebase로 인한 committer date 변경하기"
 date: 2020-05-01 23:20:00 +0900
 lastmod: 2020-05-18 02:00:00 +0900
@@ -34,6 +34,14 @@ tags:
 
 ```
 git rebase --interactive 896fd2887bda7eb9533b3bf5144b321aceea5e5c
+```
+
+<br>
+
+만약 첫 커밋을 수정하고 싶다면 `--root`를 입력해준다.
+
+```
+git rebase --interactive --root
 ```
 
 <br>
