@@ -3,11 +3,10 @@ layout: article
 title: "[git rebase] 과거 커밋했던 내용 수정하기"
 subtitle: "+rebase로 인한 committer date 변경하기"
 date: 2020-05-01 23:20:00 +0900
-lastmod: 2020-05-18 02:00:00 +0900
+lastmod: 2020-11-24 17:00:00 +0900
 tags: 
     - git
     - git rebase
-    - git amend
 ---
 
 <br>
@@ -48,7 +47,7 @@ git rebase --interactive --root
 
 # 3. `pick` => `edit` 수정
 
-이후 vi 에디터가 실행되게 되는데, 가장 최상단줄의 pick을 edit로 바꾸고 `esc` -> `:wq`를 입력해서 저장하고 빠져나온다.
+이후 vi 에디터가 실행되게 되는데, `i`를 눌러 입력모드로 전환하고, 가장 최상단줄의 pick을 edit로 바꾸고 `esc` -> `:wq`를 입력해서 저장하고 빠져나온다.
 
 ![image](https://user-images.githubusercontent.com/59393359/81479254-234bb780-925d-11ea-84ca-7bb64850e1f3.png){:.border.rounded}
 
@@ -66,33 +65,29 @@ git rebase --interactive --root
 
 # 5. 다시 커밋하기
 
-`git status`로 변경사항을 한번 확인해주고
+`git status`로 변경사항을 한번 확인해주고, `git add`를 사용하여 변경사항들을 추가해준다.
 
 ```
 git status
-```
-
-<br>
-
-`git add`를 사용한 다음
-
-```
 git add .
 ```
 
 <br>
 
-`git commit --amend` 를 입력하여 날짜 또는 커밋메세지 등을 수정한다. 변경할 사항이 없으면 그냥 나오면 된다. *(--no-edit 옵션을 사용하게 되면 커밋 메세지를 수정하지 않고 진행하게 된다.)*
+이후 `git rebase --continue`를 입력하면 커밋메세지를 수정할 수 있는 에디터가 뜨는데, `esc` -> `:wq`를 입력해서 빠져나오면 수정한 커밋부터 현재의 커밋까지 수정된 내용이 적용된다. *(커밋해시값 전부 바뀜)*
 
 ```
-git commit --amend --no-edit
+git rebase --continue
 ```
 
 <br>
 
-이후 `git rebase --continue`를 입력하게되면 수정한 커밋부터 현재의 커밋까지 수정된 내용이 적용된다. *(커밋해시값 전부 바뀜)*
+하지만 리베이스 도중에 충돌이 나게되면 에러가 뜨면서 멈추게 되는데, 이때 상태를 파악하면서 `git add` 또는 `git rm` 을 이용하여 충돌을 해결한뒤 다시 리베이스를 진행하면 된다.
 
 ```
+git status
+git add 파일1.txt
+git rm 파일2.txt
 git rebase --continue
 ```
 
@@ -102,7 +97,9 @@ git rebase --continue
 
 # 6. `git push`
 
-이제 깃허브에 푸시하게 되면 원격 저장소와 다른 내용이 들어가 있게 되어 충돌이 일어나는데 이럴때는 `git push origin +master` 를 이용하게 되면 강제로 로컬에 있는 자료로 덮어 씌우게 된다.
+이제 리베이스를 성공했다면, 깃허브에 푸시하게 되는데, 이때 원격 저장소와 다른 내용이 들어가 있게 되어 충돌이 일어나게된다.
+
+이럴때는 `+` 를 덧붙이게 되면 강제로 로컬에 있는 자료로 덮어 씌우게 된다.
 
 ```
 git push origin +master
