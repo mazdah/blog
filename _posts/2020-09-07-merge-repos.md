@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "git, 두개의 레포지토리 변경 이력까지 병합하기"
+title: "[git merge] 두개의 레포지토리 변경 이력까지 병합하기"
 subtitle: "git merge repos"
 date: 2020-09-07 17:00:00 +0900
 lastmod: 2020-11-20 22:30:00 +0900

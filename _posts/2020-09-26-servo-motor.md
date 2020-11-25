@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "[라즈베리파이, 파이썬] 서보모터 제어하기"
+title: "[raspberry pi] 파이썬으로 서보모터 제어하기"
 subtitle: "How to control the servo motor using python"
 date: 2020-09-27 16:00:00 +0900
 lastmod: 2020-09-27 16:00:00 +0900

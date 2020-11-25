@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "[라즈베리파이] 라즈베리파이, 포트포워딩하기"
+title: "[raspberry pi] 라즈베리파이, 포트포워딩하기"
 subtitle: "raspberry pi, port forwarding"
 date: 2020-11-06 18:00:00 +0900
 lastmod: 2020-11-06 18:00:00 +0900
