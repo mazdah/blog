@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "[git rebase] 과거 커밋메세지 변경하기"
-subtitle: "How to change past commit of git"
+subtitle: "How to change past commit message of git"
 date: 2020-11-27 01:30:00 +0900
 lastmod: 2020-11-27 01:30:00 +0900
 tags: 
@@ -56,6 +56,22 @@ git commit --amend
 
 ```
 git rebase --continue
+```
+
+<br>
+
+---
+
+# 5. `COMMITTER_DATE` 수정
+
+깃허브에서는 커밋날짜 기준이 `COMMITTER_DATE` 기준으로 들어가기 때문에 `AUTHOR_DATE`로 덮어 씌어주어야 한다.
+
+```
+git filter-branch --env-filter \
+    'if [ "$GIT_AUTHOR_DATE" != "$GIT_COMMITTER_DATE" ]
+     then
+         export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
+     fi'
 ```
 
 <br><br><br><br>
