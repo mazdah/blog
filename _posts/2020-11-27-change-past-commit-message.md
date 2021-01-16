@@ -30,9 +30,19 @@ git rebase -i 해시값
 
 # 2. `pick` => `reword` 수정
 
-vi에디터에 들어가게 되고, `i`를 눌러 입력모드로 전환 후, 아래와 같이 변경하고 싶은 커밋 앞에 `pick`을 `reword`로 변경하고, 커밋메세지도 `수정`한 뒤, `esc` => `:wq` => `엔터`를 눌러 빠져나온다.
+vi에디터에 들어가게 되고, `i`를 눌러 입력모드로 전환 후, 아래와 같이 변경하고 싶은 커밋 앞에 `pick`을 `reword`로 변경한 뒤, `esc` => `:wq` => `엔터`를 눌러 빠져나온다.
 
-![gif](https://user-images.githubusercontent.com/59393359/104811161-05e3da00-583d-11eb-86cb-dc03fa94bf88.gif){:.border.rounded}
+![image](https://user-images.githubusercontent.com/59393359/104812093-3d558500-5843-11eb-9c6f-e05f708148a8.png){:.border.rounded}
+
+<br>
+
+---
+
+# 3. 커밋메세지 수정
+
+이후 기존의 커밋메세지가 뜨게 되는데, `i`를 누르고 커밋메세지를 변경한 뒤, `esc` => `:wq` => `엔터`를 눌러 빠져나온다.
+
+![image](https://user-images.githubusercontent.com/59393359/104812144-b359ec00-5843-11eb-95ee-e0692d1f133d.png){:.border.rounded}
 
 <br>
 
