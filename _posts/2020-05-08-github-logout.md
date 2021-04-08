@@ -49,13 +49,13 @@ tags:
 
 ---
 
-# 5. 재 로그임
+# 5. 재 로그인
 
 이제 `git`에서 `commit`를 수행 할 때, 새로 사용자 이름과 비밀번호를 입력하라는 메시지가 표시되는데 다른 계정으로 로그인을 진행하고, 아래 명령어를 사용하여 사용자 이름과 이메일을 전역으로 입력해준다.
 
 ```
-git config --global user.name "syki66"
-git config --global user.email example@gmail.com
+git config --global user.name "유저네임"
+git config --global user.email 이메일@example.com
 ```
 
 <br><br><br><br>
