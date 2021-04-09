@@ -101,6 +101,10 @@ git filter-branch --env-filter \
      fi'
 ```
 
+```
+git push origin +브랜치이름
+```
+
 <br>
 
 ---

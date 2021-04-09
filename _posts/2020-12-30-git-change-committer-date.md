@@ -79,7 +79,7 @@ git filter-branch --env-filter \
 `git push` 할 때 충돌이 나기 때문에, 아래 명령어를 입력하여 강제로 로컬 저장소를 원격 저장소에 덮어 씌운다.
 
 ```
-git push origin +master
+git push origin +브랜치이름
 ```
 
 <br><br><br><br>
