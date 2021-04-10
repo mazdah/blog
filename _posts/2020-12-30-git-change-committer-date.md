@@ -11,7 +11,7 @@ tags:
 
 <br>
 
-`git rebase` 또는 `git cherry-pick` 등을 이용하여 과거 커밋을 수정하고, github에 push 후 히스토리를 보게되면 아래와 같이 커밋이 수정시간 기준으로 바뀌어있다.
+`git rebase`, `git cherry-pick`, `git reset` 등을 이용하여 과거 커밋을 수정하고, github에 push 후 히스토리를 보게되면 아래와 같이 커밋이 수정시간 기준으로 바뀌어있다.
 
 ![image](https://user-images.githubusercontent.com/59393359/103347281-e1b49900-4ad9-11eb-92d8-6ca77a514f47.png){:.border.rounded}
 
