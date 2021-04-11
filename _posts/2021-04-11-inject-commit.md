@@ -58,7 +58,7 @@ git add .
 ```
 
 ```
-git commit -m "새 커밋"
+git commit -m "새 커밋" --date=2021-04-11T12:00:00+0900
 ```
 
 <br>
