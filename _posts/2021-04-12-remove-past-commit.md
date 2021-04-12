@@ -2,8 +2,8 @@
 layout: article
 title: "[git rebase] 깃, 과거 커밋 삭제하기"
 subtitle: "How to remove past commit of git"
-date: 2021-04-08 21:00:00 +0900
-lastmod: 2021-04-08 21:00:00 +0900
+date: 2021-04-12 21:00:00 +0900
+lastmod: 2021-04-12 21:00:00 +0900
 tags: 
     - git
     - git rebase
@@ -11,7 +11,7 @@ tags:
 
 <br>
 
-git을 사용할때 과거의 커밋을 삭제하는 방법이며, 이때 변경이력은 완전 삭제가 된다.
+git을 사용할때 과거의 커밋을 삭제하는 방법이며, 이때 변경이력은 삭제가 된다.
 
 > 2번 커밋과 3번 커밋 사이에 있는 커밋을 삭제할때를 기준으로 설명
 
